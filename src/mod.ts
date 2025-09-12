@@ -77,6 +77,14 @@ import addExtendMagazine_RSASS from './modifies/addExtendMagazine_RSASS';
 import addExtendMagazine_SR25 from './modifies/addExtendMagazine_SR25';
 import addExtendMagazine_SVDS from './modifies/addExtendMagazine_SVDS';
 import addExtendMagazine_VSS from './modifies/addExtendMagazine_VSS';
+import addExtendMagazine_M60E4 from './modifies/addExtendMagazine_M60E4';
+import addExtendMagazine_M60E6 from './modifies/addExtendMagazine_M60E6';
+import addExtendMagazine_M60E6F from './modifies/addExtendMagazine_M60E6F';
+import addExtendMagazine_PKM from './modifies/addExtendMagazine_PKM';
+import addExtendMagazine_PKP from './modifies/addExtendMagazine_PKP';
+import addExtendMagazine_RPD from './modifies/addExtendMagazine_RPD';
+import addExtendMagazine_RPDN from './modifies/addExtendMagazine_RPDN';
+import addExtendMagazine_RPK16 from './modifies/addExtendMagazine_RPK16';
 
 // example：https://github.com/sp-tarkov/mod-examples
 
@@ -168,7 +176,14 @@ class Mod implements IPreSptLoadMod,IPostDBLoadMod,IPostSptLoadMod {
     addExtendMagazine_SR25(this.logger,this.customItemService,tables);
     addExtendMagazine_SVDS(this.logger,this.customItemService,tables);
     addExtendMagazine_VSS(this.logger,this.customItemService,tables);
-    
+    addExtendMagazine_M60E4(this.logger,this.customItemService,tables);
+    addExtendMagazine_M60E6(this.logger,this.customItemService,tables);
+    addExtendMagazine_M60E6F(this.logger,this.customItemService,tables);
+    addExtendMagazine_PKM(this.logger,this.customItemService,tables);
+    addExtendMagazine_PKP(this.logger,this.customItemService,tables);
+    addExtendMagazine_RPD(this.logger,this.customItemService,tables);
+    addExtendMagazine_RPDN(this.logger,this.customItemService,tables);
+    addExtendMagazine_RPK16(this.logger,this.customItemService,tables);
 
     //
     this.logger.success('[SPTarkovExtendMagazine]: done');
