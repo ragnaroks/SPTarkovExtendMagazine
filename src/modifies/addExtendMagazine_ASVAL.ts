@@ -7,22 +7,22 @@ import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
 import idcalc from '../helpers/idcalc';
 
-const baseId: string = '68c41a85064268822d679f00';
+const baseId: string = '68c42e3ba4bb1e2a274b0200';
 const newItemId: string = idcalc(baseId,0x01);
 const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_RFB(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
-  const weapon = tables.templates.items[ItemTpl.MARKSMANRIFLE_KELTEC_RFB_762X51_RIFLE] || null;
+export default function addExtendMagazine_ASVAL(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+  const weapon = tables.templates.items[ItemTpl.ASSAULTCARBINE_AS_VAL_9X39_SPECIAL_ASSAULT_RIFLE] || null;
   if(!weapon) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，' + ItemTpl.MARKSMANRIFLE_KELTEC_RFB_762X51_RIFLE + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_ASVAL，' + ItemTpl.ASSAULTCARBINE_AS_VAL_9X39_SPECIAL_ASSAULT_RIFLE + ' not found');
     return;
   }
 
-  const magazine = tables.templates.items[ItemTpl.MAGAZINE_762X51_L1A1_30RND] || null;
+  const magazine = tables.templates.items[ItemTpl.MAGAZINE_9X39_VSSVAL_30RND] || null;
   if(!magazine) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，' + ItemTpl.MAGAZINE_762X51_L1A1_30RND + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_ASVAL，' + ItemTpl.MAGAZINE_9X39_VSSVAL_30RND + ' not found');
     return;
   }
 
@@ -37,14 +37,14 @@ export default function addExtendMagazine_RFB(logger: ILogger,customItemService:
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'RFB extended magazine',
+        name: 'AS VAL extended magazine',
         shortName: 'Extended',
-        description: 'RFB extended magazine'
+        description: 'AS VAL extended magazine'
       },
       ch: {
-        name: 'RFB 扩容弹匣',
+        name: 'AS VAL 扩容弹匣',
         shortName: '扩容',
-        description: 'RFB 扩容弹匣'
+        description: 'AS VAL 扩容弹匣'
       }
     },
     overrideProperties: {
@@ -75,11 +75,11 @@ export default function addExtendMagazine_RFB(logger: ILogger,customItemService:
 
   const createResult = customItemService.createItemFromClone(newItem);
   if(!createResult.success) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，' + createResult.errors.join('、'));
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_ASVAL，' + createResult.errors.join('、'));
     return;
   }
 
-  const assort1 = tables.traders[Traders.MECHANIC].assort;
+  const assort1 = tables.traders[Traders.PRAPOR].assort;
   assort1.items.push({
     _id: assortId1,
     _tpl: createResult.itemId,
@@ -125,5 +125,5 @@ export default function addExtendMagazine_RFB(logger: ILogger,customItemService:
     break;
   }
 
-  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，Id：' + createResult.itemId);
+  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_ASVAL，Id：' + createResult.itemId);
 }

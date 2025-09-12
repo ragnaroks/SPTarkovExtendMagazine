@@ -7,22 +7,22 @@ import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
 import idcalc from '../helpers/idcalc';
 
-const baseId: string = '68c41a85064268822d679f00';
+const baseId: string = '68c434510365da0e143bde00';
 const newItemId: string = idcalc(baseId,0x01);
 const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_RFB(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
-  const weapon = tables.templates.items[ItemTpl.MARKSMANRIFLE_KELTEC_RFB_762X51_RIFLE] || null;
+export default function addExtendMagazine_SA58(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+  const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_DS_ARMS_SA58_762X51_ASSAULT_RIFLE] || null;
   if(!weapon) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，' + ItemTpl.MARKSMANRIFLE_KELTEC_RFB_762X51_RIFLE + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_SA58，' + ItemTpl.ASSAULTRIFLE_DS_ARMS_SA58_762X51_ASSAULT_RIFLE + ' not found');
     return;
   }
 
-  const magazine = tables.templates.items[ItemTpl.MAGAZINE_762X51_L1A1_30RND] || null;
+  const magazine = tables.templates.items[ItemTpl.MAGAZINE_762X51_SA58FAL_30RND] || null;
   if(!magazine) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，' + ItemTpl.MAGAZINE_762X51_L1A1_30RND + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_SA58，' + ItemTpl.MAGAZINE_762X51_SA58FAL_30RND + ' not found');
     return;
   }
 
@@ -37,14 +37,14 @@ export default function addExtendMagazine_RFB(logger: ILogger,customItemService:
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'RFB extended magazine',
+        name: 'SA58 extended magazine',
         shortName: 'Extended',
-        description: 'RFB extended magazine'
+        description: 'SA58 extended magazine'
       },
       ch: {
-        name: 'RFB 扩容弹匣',
+        name: 'SA58 扩容弹匣',
         shortName: '扩容',
-        description: 'RFB 扩容弹匣'
+        description: 'SA58 扩容弹匣'
       }
     },
     overrideProperties: {
@@ -75,7 +75,7 @@ export default function addExtendMagazine_RFB(logger: ILogger,customItemService:
 
   const createResult = customItemService.createItemFromClone(newItem);
   if(!createResult.success) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，' + createResult.errors.join('、'));
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_SA58，' + createResult.errors.join('、'));
     return;
   }
 
@@ -125,5 +125,5 @@ export default function addExtendMagazine_RFB(logger: ILogger,customItemService:
     break;
   }
 
-  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，Id：' + createResult.itemId);
+  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_SA58，Id：' + createResult.itemId);
 }

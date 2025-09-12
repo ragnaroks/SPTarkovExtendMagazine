@@ -40,6 +40,26 @@ import addExtendMagazine_AKS74N from './modifies/addExtendMagazine_AKS74N';
 import addExtendMagazine_AKS74U from './modifies/addExtendMagazine_AKS74U';
 import addExtendMagazine_AKS74UB from './modifies/addExtendMagazine_AKS74UB';
 import addExtendMagazine_AKS74UN from './modifies/addExtendMagazine_AKS74UN';
+import addExtendMagazine_ASVAL from './modifies/addExtendMagazine_ASVAL';
+import addExtendMagazine_ASH12 from './modifies/addExtendMagazine_ASH12';
+import addExtendMagazine_AUGA1 from './modifies/addExtendMagazine_AUGA1';
+import addExtendMagazine_AUGA3 from './modifies/addExtendMagazine_AUGA3';
+import addExtendMagazine_AUGA3B from './modifies/addExtendMagazine_AUGA3B';
+import addExtendMagazine_MDR556 from './modifies/addExtendMagazine_MDR556';
+import addExtendMagazine_MDR762 from './modifies/addExtendMagazine_MDR762';
+import addExtendMagazine_G36 from './modifies/addExtendMagazine_G36';
+import addExtendMagazine_416A5 from './modifies/addExtendMagazine_416A5';
+import addExtendMagazine_M4A1 from './modifies/addExtendMagazine_M4A1';
+import addExtendMagazine_MCX from './modifies/addExtendMagazine_MCX';
+import addExtendMagazine_MCXSPEAR from './modifies/addExtendMagazine_MCXSPEAR';
+import addExtendMagazine_MK47 from './modifies/addExtendMagazine_MK47';
+import addExtendMagazine_RD704 from './modifies/addExtendMagazine_RD704';
+import addExtendMagazine_SA58 from './modifies/addExtendMagazine_SA58';
+import addExtendMagazine_SCARH from './modifies/addExtendMagazine_SCARH';
+import addExtendMagazine_SCARHF from './modifies/addExtendMagazine_SCARHF';
+import addExtendMagazine_SCARL from './modifies/addExtendMagazine_SCARL';
+import addExtendMagazine_SCARLF from './modifies/addExtendMagazine_SCARLF';
+import addExtendMagazine_Velociraptor from './modifies/addExtendMagazine_Velociraptor';
 
 // example：https://github.com/sp-tarkov/mod-examples
 
@@ -94,7 +114,26 @@ class Mod implements IPreSptLoadMod,IPostDBLoadMod,IPostSptLoadMod {
     addExtendMagazine_AKS74U(this.logger,this.customItemService,tables);
     addExtendMagazine_AKS74UB(this.logger,this.customItemService,tables);
     addExtendMagazine_AKS74UN(this.logger,this.customItemService,tables);
-
+    addExtendMagazine_ASVAL(this.logger,this.customItemService,tables);
+    addExtendMagazine_ASH12(this.logger,this.customItemService,tables);
+    addExtendMagazine_AUGA1(this.logger,this.customItemService,tables);
+    addExtendMagazine_AUGA3(this.logger,this.customItemService,tables);
+    addExtendMagazine_AUGA3B(this.logger,this.customItemService,tables);
+    addExtendMagazine_MDR556(this.logger,this.customItemService,tables);
+    addExtendMagazine_MDR762(this.logger,this.customItemService,tables);
+    addExtendMagazine_G36(this.logger,this.customItemService,tables);
+    addExtendMagazine_416A5(this.logger,this.customItemService,tables);
+    addExtendMagazine_M4A1(this.logger,this.customItemService,tables);
+    addExtendMagazine_MCX(this.logger,this.customItemService,tables);
+    addExtendMagazine_MCXSPEAR(this.logger,this.customItemService,tables);
+    addExtendMagazine_MK47(this.logger,this.customItemService,tables);
+    addExtendMagazine_RD704(this.logger,this.customItemService,tables);
+    addExtendMagazine_SA58(this.logger,this.customItemService,tables);
+    addExtendMagazine_SCARH(this.logger,this.customItemService,tables);
+    addExtendMagazine_SCARHF(this.logger,this.customItemService,tables);
+    addExtendMagazine_SCARL(this.logger,this.customItemService,tables);
+    addExtendMagazine_SCARLF(this.logger,this.customItemService,tables);
+    addExtendMagazine_Velociraptor(this.logger,this.customItemService,tables);
 
     //
     this.logger.success('[SPTarkovExtendMagazine]: done');
