@@ -37,14 +37,14 @@ export default function addExtendMagazine_VPO101(logger: ILogger,customItemServi
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'VPO-101 extend magazine',
-        shortName: 'ext',
-        description: 'VPO-101 extend magazine'
+        name: 'VPO-101 extended magazine',
+        shortName: 'Extended',
+        description: 'VPO-101 extended magazine'
       },
       ch: {
-        name: 'VPO-101 扩展弹匣',
-        shortName: '扩展',
-        description: 'VPO-101 扩展弹匣'
+        name: 'VPO-101 扩容弹匣',
+        shortName: '扩容',
+        description: 'VPO-101 扩容弹匣'
       }
     },
     overrideProperties: {

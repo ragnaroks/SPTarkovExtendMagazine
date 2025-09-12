@@ -37,14 +37,14 @@ export default function addExtendMagazine_VPO209(logger: ILogger,customItemServi
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'VPO-209 extend magazine',
-        shortName: 'ext',
-        description: 'VPO-209 extend magazine'
+        name: 'VPO-209 extended magazine',
+        shortName: 'Extended',
+        description: 'VPO-209 extended magazine'
       },
       ch: {
-        name: 'VPO-209 扩展弹匣',
-        shortName: '扩展',
-        description: 'VPO-209 扩展弹匣'
+        name: 'VPO-209 扩容弹匣',
+        shortName: '扩容',
+        description: 'VPO-209 扩容弹匣'
       }
     },
     overrideProperties: {

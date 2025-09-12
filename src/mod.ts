@@ -28,6 +28,18 @@ import addExtendMagazine_AK74M from './modifies/addExtendMagazine_AK74M';
 import addExtendMagazine_AK74N from './modifies/addExtendMagazine_AK74N';
 import addExtendMagazine_AK101 from './modifies/addExtendMagazine_AK101';
 import addExtendMagazine_AK102 from './modifies/addExtendMagazine_AK102';
+import addExtendMagazine_AK103 from './modifies/addExtendMagazine_AK103';
+import addExtendMagazine_AK104 from './modifies/addExtendMagazine_AK104';
+import addExtendMagazine_AK105 from './modifies/addExtendMagazine_AK105';
+import addExtendMagazine_AKM from './modifies/addExtendMagazine_AKM';
+import addExtendMagazine_AKMN from './modifies/addExtendMagazine_AKMN';
+import addExtendMagazine_AKMS from './modifies/addExtendMagazine_AKMS';
+import addExtendMagazine_AKMSN from './modifies/addExtendMagazine_AKMSN';
+import addExtendMagazine_AKS74 from './modifies/addExtendMagazine_AKS74';
+import addExtendMagazine_AKS74N from './modifies/addExtendMagazine_AKS74N';
+import addExtendMagazine_AKS74U from './modifies/addExtendMagazine_AKS74U';
+import addExtendMagazine_AKS74UB from './modifies/addExtendMagazine_AKS74UB';
+import addExtendMagazine_AKS74UN from './modifies/addExtendMagazine_AKS74UN';
 
 // example：https://github.com/sp-tarkov/mod-examples
 
@@ -70,6 +82,19 @@ class Mod implements IPreSptLoadMod,IPostDBLoadMod,IPostSptLoadMod {
     addExtendMagazine_AK74N(this.logger,this.customItemService,tables);
     addExtendMagazine_AK101(this.logger,this.customItemService,tables);
     addExtendMagazine_AK102(this.logger,this.customItemService,tables);
+    addExtendMagazine_AK103(this.logger,this.customItemService,tables);
+    addExtendMagazine_AK104(this.logger,this.customItemService,tables);
+    addExtendMagazine_AK105(this.logger,this.customItemService,tables);
+    addExtendMagazine_AKM(this.logger,this.customItemService,tables);
+    addExtendMagazine_AKMN(this.logger,this.customItemService,tables);
+    addExtendMagazine_AKMS(this.logger,this.customItemService,tables);
+    addExtendMagazine_AKMSN(this.logger,this.customItemService,tables);
+    addExtendMagazine_AKS74(this.logger,this.customItemService,tables);
+    addExtendMagazine_AKS74N(this.logger,this.customItemService,tables);
+    addExtendMagazine_AKS74U(this.logger,this.customItemService,tables);
+    addExtendMagazine_AKS74UB(this.logger,this.customItemService,tables);
+    addExtendMagazine_AKS74UN(this.logger,this.customItemService,tables);
+
 
     //
     this.logger.success('[SPTarkovExtendMagazine]: done');

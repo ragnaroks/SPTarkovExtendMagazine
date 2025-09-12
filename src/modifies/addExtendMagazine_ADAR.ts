@@ -37,14 +37,14 @@ export default function addExtendMagazine_ADAR(logger: ILogger,customItemService
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'ADAR 2-15 extend magazine',
-        shortName: 'ext',
-        description: 'ADAR 2-15 extend magazine'
+        name: 'ADAR 2-15 extended magazine',
+        shortName: 'Extended',
+        description: 'ADAR 2-15 extended magazine'
       },
       ch: {
-        name: 'ADAR 2-15 扩展弹匣',
-        shortName: '扩展',
-        description: 'ADAR 2-15 扩展弹匣'
+        name: 'ADAR 2-15 扩容弹匣',
+        shortName: '扩容',
+        description: 'ADAR 2-15 扩容弹匣'
       }
     },
     overrideProperties: {

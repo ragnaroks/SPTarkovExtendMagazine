@@ -37,14 +37,14 @@ export default function addExtendMagazine_OPSKS(logger: ILogger,customItemServic
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'OP-SKS extend magazine',
-        shortName: 'ext',
-        description: 'OP-SKS extend magazine'
+        name: 'OP-SKS extended magazine',
+        shortName: 'Extended',
+        description: 'OP-SKS extended magazine'
       },
       ch: {
-        name: 'OP-SKS 扩展弹匣',
-        shortName: '扩展',
-        description: 'OP-SKS 扩展弹匣'
+        name: 'OP-SKS 扩容弹匣',
+        shortName: '扩容',
+        description: 'OP-SKS 扩容弹匣'
       }
     },
     overrideProperties: {

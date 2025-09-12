@@ -37,14 +37,14 @@ export default function addExtendMagazine_AK12(logger: ILogger,customItemService
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'AK-12 extend magazine',
-        shortName: 'ext',
-        description: 'AK-12 extend magazine'
+        name: 'AK-12 extended magazine',
+        shortName: 'Extended',
+        description: 'AK-12 extended magazine'
       },
       ch: {
-        name: 'AK-12 扩展弹匣',
-        shortName: '扩展',
-        description: 'AK-12 扩展弹匣'
+        name: 'AK-12 扩容弹匣',
+        shortName: '扩容',
+        description: 'AK-12 扩容弹匣'
       }
     },
     overrideProperties: {

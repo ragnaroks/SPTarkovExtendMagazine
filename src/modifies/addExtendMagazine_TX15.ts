@@ -37,14 +37,14 @@ export default function addExtendMagazine_TX15(logger: ILogger,customItemService
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'TX-15 extend magazine',
-        shortName: 'ext',
-        description: 'TX-15 extend magazine'
+        name: 'TX-15 extended magazine',
+        shortName: 'Extended',
+        description: 'TX-15 extended magazine'
       },
       ch: {
-        name: 'TX-15 扩展弹匣',
-        shortName: '扩展',
-        description: 'TX-15 扩展弹匣'
+        name: 'TX-15 扩容弹匣',
+        shortName: '扩容',
+        description: 'TX-15 扩容弹匣'
       }
     },
     overrideProperties: {

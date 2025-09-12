@@ -7,22 +7,22 @@ import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
 import idcalc from '../helpers/idcalc';
 
-const baseId: string = '68c4213e502cba78fd87ed00';
+const baseId: string = '68c429e3ef15087f2176f900';
 const newItemId: string = idcalc(baseId,0x01);
 const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_VPO136(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
-  const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_MOLOT_ARMS_VPO136_VEPRKM_762X39_CARBINE] || null;
+export default function addExtendMagazine_AK103(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+  const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_KALASHNIKOV_AK103_762X39_ASSAULT_RIFLE] || null;
   if(!weapon) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_VPO136，' + ItemTpl.ASSAULTRIFLE_MOLOT_ARMS_VPO136_VEPRKM_762X39_CARBINE + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_AK103，' + ItemTpl.ASSAULTRIFLE_KALASHNIKOV_AK103_762X39_ASSAULT_RIFLE + ' not found');
     return;
   }
 
-  const magazine = tables.templates.items[ItemTpl.MAGAZINE_366TKM_AK55_30RND] || null;
+  const magazine = tables.templates.items[ItemTpl.MAGAZINE_366TKM_AK103_30RND] || null;
   if(!magazine) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_VPO136，' + ItemTpl.MAGAZINE_366TKM_AK55_30RND + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_AK103，' + ItemTpl.MAGAZINE_366TKM_AK103_30RND + ' not found');
     return;
   }
 
@@ -37,14 +37,14 @@ export default function addExtendMagazine_VPO136(logger: ILogger,customItemServi
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'VPO-136 extended magazine',
+        name: 'AK-103 extended magazine',
         shortName: 'Extended',
-        description: 'VPO-136 extended magazine'
+        description: 'AK-103 extended magazine'
       },
       ch: {
-        name: 'VPO-136 扩容弹匣',
+        name: 'AK-103 扩容弹匣',
         shortName: '扩容',
-        description: 'VPO-136 扩容弹匣'
+        description: 'AK-103 扩容弹匣'
       }
     },
     overrideProperties: {
@@ -75,7 +75,7 @@ export default function addExtendMagazine_VPO136(logger: ILogger,customItemServi
 
   const createResult = customItemService.createItemFromClone(newItem);
   if(!createResult.success) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_VPO136，' + createResult.errors.join('、'));
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_AK103，' + createResult.errors.join('、'));
     return;
   }
 
@@ -125,5 +125,5 @@ export default function addExtendMagazine_VPO136(logger: ILogger,customItemServi
     break;
   }
 
-  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_VPO136，Id：' + createResult.itemId);
+  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_AK103，Id：' + createResult.itemId);
 }

@@ -37,14 +37,14 @@ export default function addExtendMagazine_RFB(logger: ILogger,customItemService:
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'RFB extend magazine',
-        shortName: 'ext',
-        description: 'RFB extend magazine'
+        name: 'RFB extended magazine',
+        shortName: 'Extended',
+        description: 'RFB extended magazine'
       },
       ch: {
-        name: 'RFB 扩展弹匣',
-        shortName: '扩展',
-        description: 'RFB 扩展弹匣'
+        name: 'RFB 扩容弹匣',
+        shortName: '扩容',
+        description: 'RFB 扩容弹匣'
       }
     },
     overrideProperties: {

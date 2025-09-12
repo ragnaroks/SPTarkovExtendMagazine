@@ -37,14 +37,14 @@ export default function addExtendMagazine_SKS(logger: ILogger,customItemService:
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'SKS extend magazine',
-        shortName: 'ext',
-        description: 'SKS extend magazine'
+        name: 'SKS extended magazine',
+        shortName: 'Extended',
+        description: 'SKS extended magazine'
       },
       ch: {
-        name: 'SKS 扩展弹匣',
-        shortName: '扩展',
-        description: 'SKS 扩展弹匣'
+        name: 'SKS 扩容弹匣',
+        shortName: '扩容',
+        description: 'SKS 扩容弹匣'
       }
     },
     overrideProperties: {

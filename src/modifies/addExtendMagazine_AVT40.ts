@@ -37,14 +37,14 @@ export default function addExtendMagazine_AVT40(logger: ILogger,customItemServic
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'AVT-40 extend magazine',
-        shortName: 'ext',
-        description: 'AVT-40 extend magazine'
+        name: 'AVT-40 extended magazine',
+        shortName: 'Extended',
+        description: 'AVT-40 extended magazine'
       },
       ch: {
-        name: 'AVT-40 扩展弹匣',
-        shortName: '扩展',
-        description: 'AVT-40 扩展弹匣'
+        name: 'AVT-40 扩容弹匣',
+        shortName: '扩容',
+        description: 'AVT-40 扩容弹匣'
       }
     },
     overrideProperties: {

@@ -37,14 +37,14 @@ export default function addExtendMagazine_SVT40(logger: ILogger,customItemServic
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'SVT-40 extend magazine',
-        shortName: 'ext',
-        description: 'SVT-40 extend magazine'
+        name: 'SVT-40 extended magazine',
+        shortName: 'Extended',
+        description: 'SVT-40 extended magazine'
       },
       ch: {
-        name: 'SVT-40 扩展弹匣',
-        shortName: '扩展',
-        description: 'SVT-40 扩展弹匣'
+        name: 'SVT-40 扩容弹匣',
+        shortName: '扩容',
+        description: 'SVT-40 扩容弹匣'
       }
     },
     overrideProperties: {

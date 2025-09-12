@@ -37,14 +37,14 @@ export default function addExtendMagazine_SR3M(logger: ILogger,customItemService
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'SR-3M extend magazine',
-        shortName: 'ext',
-        description: 'SR-3M extend magazine'
+        name: 'SR-3M extended magazine',
+        shortName: 'Extended',
+        description: 'SR-3M extended magazine'
       },
       ch: {
-        name: 'SR-3M 扩展弹匣',
-        shortName: '扩展',
-        description: 'SR-3M 扩展弹匣'
+        name: 'SR-3M 扩容弹匣',
+        shortName: '扩容',
+        description: 'SR-3M 扩容弹匣'
       }
     },
     overrideProperties: {

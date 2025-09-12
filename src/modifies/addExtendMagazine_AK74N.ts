@@ -37,14 +37,14 @@ export default function addExtendMagazine_AK74N(logger: ILogger,customItemServic
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'AK-74N extend magazine',
-        shortName: 'ext',
-        description: 'AK-74N extend magazine'
+        name: 'AK-74N extended magazine',
+        shortName: 'Extended',
+        description: 'AK-74N extended magazine'
       },
       ch: {
-        name: 'AK-74N 扩展弹匣',
-        shortName: '扩展',
-        description: 'AK-74N 扩展弹匣'
+        name: 'AK-74N 扩容弹匣',
+        shortName: '扩容',
+        description: 'AK-74N 扩容弹匣'
       }
     },
     overrideProperties: {

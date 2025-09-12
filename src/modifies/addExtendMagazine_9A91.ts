@@ -37,14 +37,14 @@ export default function addExtendMagazine_9A91(logger: ILogger,customItemService
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: '9A-91 extend magazine',
-        shortName: 'ext',
-        description: '9A-91 extend magazine'
+        name: '9A-91 extended magazine',
+        shortName: 'Extended',
+        description: '9A-91 extended magazine'
       },
       ch: {
-        name: '9A-91 扩展弹匣',
-        shortName: '扩展',
-        description: '9A-91 扩展弹匣'
+        name: '9A-91 扩容弹匣',
+        shortName: '扩容',
+        description: '9A-91 扩容弹匣'
       }
     },
     overrideProperties: {
