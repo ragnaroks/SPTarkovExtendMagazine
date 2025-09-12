@@ -60,13 +60,17 @@ export default function addExtendMagazine_M590A1(logger: ILogger,customItemServi
       MalfunctionChance: 0,
       MalfMisfireChance: 0,
       Weight:0,
+      Recoil:0,
+      Ergonomics:0,
+      LoadUnloadModifier:0,
+      CheckTimeModifier:0,
       Cartridges: [
         {
           _proto: magazine._props.Cartridges[0]._proto,
           _id: propsId1,
           _name: 'cartridges',
           _parent: newItemId,
-          _max_count: magazine._props.Cartridges[0]._max_count * 5,
+          _max_count: magazine._props.Cartridges[0]._max_count * 5 * 2,
           _props: magazine._props.Cartridges[0]._props
         }
       ]

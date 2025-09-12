@@ -244,6 +244,7 @@ class Mod implements IPreSptLoadMod,IPostDBLoadMod,IPostSptLoadMod {
     addExtendMagazine_RPD(this.logger,this.customItemService,tables);
     addExtendMagazine_RPDN(this.logger,this.customItemService,tables);
     addExtendMagazine_RPK16(this.logger,this.customItemService,tables);
+    //
     addExtendMagazine_AA12G1(this.logger,this.customItemService,tables);
     addExtendMagazine_AA12G2(this.logger,this.customItemService,tables);
     addExtendMagazine_KS23M(this.logger,this.customItemService,tables);
@@ -256,6 +257,7 @@ class Mod implements IPreSptLoadMod,IPostDBLoadMod,IPostSptLoadMod {
     addExtendMagazine_SAIGA12K(this.logger,this.customItemService,tables);
     addExtendMagazine_SAIGA12KFA(this.logger,this.customItemService,tables);
     addExtendMagazine_TOZ106(this.logger,this.customItemService,tables);
+    //
     addExtendMagazine_MP5(this.logger,this.customItemService,tables);
     addExtendMagazine_MP5K(this.logger,this.customItemService,tables);
     addExtendMagazine_MP7A1(this.logger,this.customItemService,tables);

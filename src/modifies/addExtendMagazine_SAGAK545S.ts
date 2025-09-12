@@ -60,6 +60,10 @@ export default function addExtendMagazine_SAGAK545S(logger: ILogger,customItemSe
       MalfunctionChance: 0,
       MalfMisfireChance: 0,
       Weight:0,
+      Recoil:0,
+      Ergonomics:0,
+      LoadUnloadModifier:0,
+      CheckTimeModifier:0,
       Cartridges: [
         {
           _proto: magazine._props.Cartridges[0]._proto,
