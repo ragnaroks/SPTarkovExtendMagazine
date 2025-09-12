@@ -85,6 +85,18 @@ import addExtendMagazine_PKP from './modifies/addExtendMagazine_PKP';
 import addExtendMagazine_RPD from './modifies/addExtendMagazine_RPD';
 import addExtendMagazine_RPDN from './modifies/addExtendMagazine_RPDN';
 import addExtendMagazine_RPK16 from './modifies/addExtendMagazine_RPK16';
+import addExtendMagazine_AA12G1 from './modifies/addExtendMagazine_AA12G1';
+import addExtendMagazine_AA12G2 from './modifies/addExtendMagazine_AA12G2';
+import addExtendMagazine_KS23M from './modifies/addExtendMagazine_KS23M';
+import addExtendMagazine_M3 from './modifies/addExtendMagazine_M3';
+import addExtendMagazine_M590A1 from './modifies/addExtendMagazine_M590A1';
+import addExtendMagazine_M870 from './modifies/addExtendMagazine_M870';
+import addExtendMagazine_MP133 from './modifies/addExtendMagazine_MP133';
+import addExtendMagazine_MP153 from './modifies/addExtendMagazine_MP153';
+import addExtendMagazine_MP155 from './modifies/addExtendMagazine_MP155';
+import addExtendMagazine_SAIGA12K from './modifies/addExtendMagazine_SAIGA12K';
+import addExtendMagazine_SAIGA12KFA from './modifies/addExtendMagazine_SAIGA12KFA';
+import addExtendMagazine_TOZ106 from './modifies/addExtendMagazine_TOZ106';
 
 // example：https://github.com/sp-tarkov/mod-examples
 
@@ -184,6 +196,19 @@ class Mod implements IPreSptLoadMod,IPostDBLoadMod,IPostSptLoadMod {
     addExtendMagazine_RPD(this.logger,this.customItemService,tables);
     addExtendMagazine_RPDN(this.logger,this.customItemService,tables);
     addExtendMagazine_RPK16(this.logger,this.customItemService,tables);
+    addExtendMagazine_AA12G1(this.logger,this.customItemService,tables);
+    addExtendMagazine_AA12G2(this.logger,this.customItemService,tables);
+    addExtendMagazine_KS23M(this.logger,this.customItemService,tables);
+    addExtendMagazine_M3(this.logger,this.customItemService,tables);
+    addExtendMagazine_M590A1(this.logger,this.customItemService,tables);
+    addExtendMagazine_M870(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP133(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP153(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP155(this.logger,this.customItemService,tables);
+    addExtendMagazine_SAIGA12K(this.logger,this.customItemService,tables);
+    addExtendMagazine_SAIGA12KFA(this.logger,this.customItemService,tables);
+    addExtendMagazine_TOZ106(this.logger,this.customItemService,tables);
+
 
     //
     this.logger.success('[SPTarkovExtendMagazine]: done');

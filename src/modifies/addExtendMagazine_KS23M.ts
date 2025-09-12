@@ -7,22 +7,22 @@ import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
 import idcalc from '../helpers/idcalc';
 
-const baseId: string = '68c445e73574b7bb907a7600';
+const baseId: string = '68c44b2dffa4182f6a8c8f00';
 const newItemId: string = idcalc(baseId,0x01);
 const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_VSS(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
-  const weapon = tables.templates.items[ItemTpl.MARKSMANRIFLE_VSS_VINTOREZ_9X39_SPECIAL_SNIPER_RIFLE] || null;
+export default function addExtendMagazine_KS23M(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+  const weapon = tables.templates.items[ItemTpl.SHOTGUN_TOZ_KS23M_23X75MM_PUMPACTION] || null;
   if(!weapon) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_VSS，' + ItemTpl.MARKSMANRIFLE_VSS_VINTOREZ_9X39_SPECIAL_SNIPER_RIFLE + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_KS23M，' + ItemTpl.SHOTGUN_TOZ_KS23M_23X75MM_PUMPACTION + ' not found');
     return;
   }
 
-  const magazine = tables.templates.items[ItemTpl.MAGAZINE_9X39_VSSVAL_30RND] || null;
+  const magazine = tables.templates.items[ItemTpl.MAGAZINE_23X75_KS23MX3_3RND] || null;
   if(!magazine) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_VSS，' + ItemTpl.MAGAZINE_9X39_VSSVAL_30RND + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_KS23M，' + ItemTpl.MAGAZINE_23X75_KS23MX3_3RND + ' not found');
     return;
   }
 
@@ -37,14 +37,14 @@ export default function addExtendMagazine_VSS(logger: ILogger,customItemService:
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'VSS extended magazine',
+        name: 'KS-23M extended magazine',
         shortName: 'Extended',
-        description: 'VSS extended magazine'
+        description: 'KS-23M extended magazine'
       },
       ch: {
-        name: 'VSS 扩容弹匣',
+        name: 'KS-23M 扩容弹匣',
         shortName: '扩容',
-        description: 'VSS 扩容弹匣'
+        description: 'KS-23M 扩容弹匣'
       }
     },
     overrideProperties: {
@@ -75,7 +75,7 @@ export default function addExtendMagazine_VSS(logger: ILogger,customItemService:
 
   const createResult = customItemService.createItemFromClone(newItem);
   if(!createResult.success) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_VSS，' + createResult.errors.join('、'));
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_KS23M，' + createResult.errors.join('、'));
     return;
   }
 
@@ -125,5 +125,5 @@ export default function addExtendMagazine_VSS(logger: ILogger,customItemService:
     break;
   }
 
-  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_VSS，Id：' + createResult.itemId);
+  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_KS23M，Id：' + createResult.itemId);
 }

@@ -7,22 +7,22 @@ import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
 import idcalc from '../helpers/idcalc';
 
-const baseId: string = '68c445e73574b7bb907a7600';
+const baseId: string = '68c4502fb75e5ecc0f40e900';
 const newItemId: string = idcalc(baseId,0x01);
 const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_VSS(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
-  const weapon = tables.templates.items[ItemTpl.MARKSMANRIFLE_VSS_VINTOREZ_9X39_SPECIAL_SNIPER_RIFLE] || null;
+export default function addExtendMagazine_SAIGA12KFA(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+  const weapon = tables.templates.items[ItemTpl.SHOTGUN_SAIGA12K_12GA_AUTOMATIC] || null;
   if(!weapon) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_VSS，' + ItemTpl.MARKSMANRIFLE_VSS_VINTOREZ_9X39_SPECIAL_SNIPER_RIFLE + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_SAIGA12KFA，' + ItemTpl.SHOTGUN_SAIGA12K_12GA_AUTOMATIC + ' not found');
     return;
   }
 
-  const magazine = tables.templates.items[ItemTpl.MAGAZINE_9X39_VSSVAL_30RND] || null;
+  const magazine = tables.templates.items[ItemTpl.MAGAZINE_12G_SB5_5RND] || null;
   if(!magazine) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_VSS，' + ItemTpl.MAGAZINE_9X39_VSSVAL_30RND + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_SAIGA12KFA，' + ItemTpl.MAGAZINE_12G_SB5_5RND + ' not found');
     return;
   }
 
@@ -37,14 +37,14 @@ export default function addExtendMagazine_VSS(logger: ILogger,customItemService:
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'VSS extended magazine',
+        name: 'Saiga-12K FA extended magazine',
         shortName: 'Extended',
-        description: 'VSS extended magazine'
+        description: 'Saiga-12K FA extended magazine'
       },
       ch: {
-        name: 'VSS 扩容弹匣',
+        name: 'Saiga-12K FA 扩容弹匣',
         shortName: '扩容',
-        description: 'VSS 扩容弹匣'
+        description: 'Saiga-12K FA 扩容弹匣'
       }
     },
     overrideProperties: {
@@ -75,11 +75,11 @@ export default function addExtendMagazine_VSS(logger: ILogger,customItemService:
 
   const createResult = customItemService.createItemFromClone(newItem);
   if(!createResult.success) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_VSS，' + createResult.errors.join('、'));
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_SAIGA12KFA，' + createResult.errors.join('、'));
     return;
   }
 
-  const assort1 = tables.traders[Traders.PRAPOR].assort;
+  const assort1 = tables.traders[Traders.SKIER].assort;
   assort1.items.push({
     _id: assortId1,
     _tpl: createResult.itemId,
@@ -125,5 +125,5 @@ export default function addExtendMagazine_VSS(logger: ILogger,customItemService:
     break;
   }
 
-  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_VSS，Id：' + createResult.itemId);
+  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_SAIGA12KFA，Id：' + createResult.itemId);
 }
