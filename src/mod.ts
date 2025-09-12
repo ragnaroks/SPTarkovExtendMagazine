@@ -119,6 +119,32 @@ import addExtendMagazine_UZIPP from './modifies/addExtendMagazine_UZIPP';
 import addExtendMagazine_UZIPS from './modifies/addExtendMagazine_UZIPS';
 import addExtendMagazine_Vector45 from './modifies/addExtendMagazine_Vector45';
 import addExtendMagazine_Vector9 from './modifies/addExtendMagazine_Vector9';
+import addExtendMagazine_APB from './modifies/addExtendMagazine_APB';
+import addExtendMagazine_APS from './modifies/addExtendMagazine_APS';
+import addExtendMagazine_ToyGun from './modifies/addExtendMagazine_ToyGun';
+import addExtendMagazine_DE357 from './modifies/addExtendMagazine_DE357';
+import addExtendMagazine_DE50L5 from './modifies/addExtendMagazine_DE50L5';
+import addExtendMagazine_DE50L6 from './modifies/addExtendMagazine_DE50L6';
+import addExtendMagazine_DE50L6WTS from './modifies/addExtendMagazine_DE50L6WTS';
+import addExtendMagazine_DE50MKXIX from './modifies/addExtendMagazine_DE50MKXIX';
+import addExtendMagazine_FN57 from './modifies/addExtendMagazine_FN57';
+import addExtendMagazine_FN57F from './modifies/addExtendMagazine_FN57F';
+import addExtendMagazine_Glock17 from './modifies/addExtendMagazine_Glock17';
+import addExtendMagazine_Glock18C from './modifies/addExtendMagazine_Glock18C';
+import addExtendMagazine_Glock19X from './modifies/addExtendMagazine_Glock19X';
+import addExtendMagazine_M9A3 from './modifies/addExtendMagazine_M9A3';
+import addExtendMagazine_M45A1 from './modifies/addExtendMagazine_M45A1';
+import addExtendMagazine_M1911A1 from './modifies/addExtendMagazine_M1911A1';
+import addExtendMagazine_MP443 from './modifies/addExtendMagazine_MP443';
+import addExtendMagazine_P226R from './modifies/addExtendMagazine_P226R';
+import addExtendMagazine_PB from './modifies/addExtendMagazine_PB';
+import addExtendMagazine_PL15 from './modifies/addExtendMagazine_PL15';
+import addExtendMagazine_PMT from './modifies/addExtendMagazine_PMT';
+import addExtendMagazine_PM from './modifies/addExtendMagazine_PM';
+import addExtendMagazine_SR1MP from './modifies/addExtendMagazine_SR1MP';
+import addExtendMagazine_TT33 from './modifies/addExtendMagazine_TT33';
+import addExtendMagazine_TT33G from './modifies/addExtendMagazine_TT33G';
+import addExtendMagazine_USP45 from './modifies/addExtendMagazine_USP45';
 
 // example：https://github.com/sp-tarkov/mod-examples
 
@@ -252,7 +278,32 @@ class Mod implements IPreSptLoadMod,IPostDBLoadMod,IPostSptLoadMod {
     addExtendMagazine_UZIPS(this.logger,this.customItemService,tables);
     addExtendMagazine_Vector45(this.logger,this.customItemService,tables);
     addExtendMagazine_Vector9(this.logger,this.customItemService,tables);
-
+    addExtendMagazine_APB(this.logger,this.customItemService,tables);
+    addExtendMagazine_APS(this.logger,this.customItemService,tables);
+    addExtendMagazine_ToyGun(this.logger,this.customItemService,tables);
+    addExtendMagazine_DE357(this.logger,this.customItemService,tables);
+    addExtendMagazine_DE50L5(this.logger,this.customItemService,tables);
+    addExtendMagazine_DE50L6(this.logger,this.customItemService,tables);
+    addExtendMagazine_DE50L6WTS(this.logger,this.customItemService,tables);
+    addExtendMagazine_DE50MKXIX(this.logger,this.customItemService,tables);
+    addExtendMagazine_FN57(this.logger,this.customItemService,tables);
+    addExtendMagazine_FN57F(this.logger,this.customItemService,tables);
+    addExtendMagazine_Glock17(this.logger,this.customItemService,tables);
+    addExtendMagazine_Glock18C(this.logger,this.customItemService,tables);
+    addExtendMagazine_Glock19X(this.logger,this.customItemService,tables);
+    addExtendMagazine_M9A3(this.logger,this.customItemService,tables);
+    addExtendMagazine_M45A1(this.logger,this.customItemService,tables);
+    addExtendMagazine_M1911A1(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP443(this.logger,this.customItemService,tables);
+    addExtendMagazine_P226R(this.logger,this.customItemService,tables);
+    addExtendMagazine_PB(this.logger,this.customItemService,tables);
+    addExtendMagazine_PL15(this.logger,this.customItemService,tables);
+    addExtendMagazine_PMT(this.logger,this.customItemService,tables);
+    addExtendMagazine_PM(this.logger,this.customItemService,tables);
+    addExtendMagazine_SR1MP(this.logger,this.customItemService,tables);
+    addExtendMagazine_TT33(this.logger,this.customItemService,tables);
+    addExtendMagazine_TT33G(this.logger,this.customItemService,tables);
+    addExtendMagazine_USP45(this.logger,this.customItemService,tables);
 
     //
     this.logger.success('[SPTarkovExtendMagazine]: done');
