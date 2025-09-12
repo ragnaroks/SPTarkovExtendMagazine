@@ -97,6 +97,28 @@ import addExtendMagazine_MP155 from './modifies/addExtendMagazine_MP155';
 import addExtendMagazine_SAIGA12K from './modifies/addExtendMagazine_SAIGA12K';
 import addExtendMagazine_SAIGA12KFA from './modifies/addExtendMagazine_SAIGA12KFA';
 import addExtendMagazine_TOZ106 from './modifies/addExtendMagazine_TOZ106';
+import addExtendMagazine_MP5 from './modifies/addExtendMagazine_MP5';
+import addExtendMagazine_MP5K from './modifies/addExtendMagazine_MP5K';
+import addExtendMagazine_MP7A1 from './modifies/addExtendMagazine_MP7A1';
+import addExtendMagazine_MP7A2 from './modifies/addExtendMagazine_MP7A2';
+import addExtendMagazine_MP9 from './modifies/addExtendMagazine_MP9';
+import addExtendMagazine_MP9N from './modifies/addExtendMagazine_MP9N';
+import addExtendMagazine_MPX from './modifies/addExtendMagazine_MPX';
+import addExtendMagazine_P90 from './modifies/addExtendMagazine_P90';
+import addExtendMagazine_PP9 from './modifies/addExtendMagazine_PP9';
+import addExtendMagazine_PP1901 from './modifies/addExtendMagazine_PP1901';
+import addExtendMagazine_PP91 from './modifies/addExtendMagazine_PP91';
+import addExtendMagazine_PP9101 from './modifies/addExtendMagazine_PP9101';
+import addExtendMagazine_PPSH41 from './modifies/addExtendMagazine_PPSH41';
+import addExtendMagazine_SAIGA9 from './modifies/addExtendMagazine_SAIGA9';
+import addExtendMagazine_SR2M from './modifies/addExtendMagazine_SR2M';
+import addExtendMagazine_STM9 from './modifies/addExtendMagazine_STM9';
+import addExtendMagazine_UMP45 from './modifies/addExtendMagazine_UMP45';
+import addExtendMagazine_UZI from './modifies/addExtendMagazine_UZI';
+import addExtendMagazine_UZIPP from './modifies/addExtendMagazine_UZIPP';
+import addExtendMagazine_UZIPS from './modifies/addExtendMagazine_UZIPS';
+import addExtendMagazine_Vector45 from './modifies/addExtendMagazine_Vector45';
+import addExtendMagazine_Vector9 from './modifies/addExtendMagazine_Vector9';
 
 // example：https://github.com/sp-tarkov/mod-examples
 
@@ -208,6 +230,28 @@ class Mod implements IPreSptLoadMod,IPostDBLoadMod,IPostSptLoadMod {
     addExtendMagazine_SAIGA12K(this.logger,this.customItemService,tables);
     addExtendMagazine_SAIGA12KFA(this.logger,this.customItemService,tables);
     addExtendMagazine_TOZ106(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP5(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP5K(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP7A1(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP7A2(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP9(this.logger,this.customItemService,tables);
+    addExtendMagazine_MP9N(this.logger,this.customItemService,tables);
+    addExtendMagazine_MPX(this.logger,this.customItemService,tables);
+    addExtendMagazine_P90(this.logger,this.customItemService,tables);
+    addExtendMagazine_PP9(this.logger,this.customItemService,tables);
+    addExtendMagazine_PP1901(this.logger,this.customItemService,tables);
+    addExtendMagazine_PP91(this.logger,this.customItemService,tables);
+    addExtendMagazine_PP9101(this.logger,this.customItemService,tables);
+    addExtendMagazine_PPSH41(this.logger,this.customItemService,tables);
+    addExtendMagazine_SAIGA9(this.logger,this.customItemService,tables);
+    addExtendMagazine_SR2M(this.logger,this.customItemService,tables);
+    addExtendMagazine_STM9(this.logger,this.customItemService,tables);
+    addExtendMagazine_UMP45(this.logger,this.customItemService,tables);
+    addExtendMagazine_UZI(this.logger,this.customItemService,tables);
+    addExtendMagazine_UZIPP(this.logger,this.customItemService,tables);
+    addExtendMagazine_UZIPS(this.logger,this.customItemService,tables);
+    addExtendMagazine_Vector45(this.logger,this.customItemService,tables);
+    addExtendMagazine_Vector9(this.logger,this.customItemService,tables);
 
 
     //
