@@ -7,7 +7,7 @@ import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
 import idcalc from '../helpers/idcalc';
 
-const baseId: string = '68c45d3e39536931c4e52b00';
+const baseId: string = '68c46381b2d3f3421cd9a000';
 const newItemId: string = idcalc(baseId,0x01);
 const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
