@@ -7,22 +7,22 @@ import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
 import idcalc from '../helpers/idcalc';
 
-const baseId: string = '68c4315f5882ca21d84cae00';
+const baseId: string = '68c43805bc3f4a30b20c7100';
 const newItemId: string = idcalc(baseId,0x01);
 const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_M4A1(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
-  const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_COLT_M4A1_556X45_ASSAULT_RIFLE] || null;
+export default function addExtendMagazine_AXMC(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+  const weapon = tables.templates.items[ItemTpl.SNIPERRIFLE_ACCURACY_INTERNATIONAL_AXMC_338_LM_BOLTACTION_SNIPER_RIFLE] || null;
   if(!weapon) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_M4A1，' + ItemTpl.ASSAULTRIFLE_COLT_M4A1_556X45_ASSAULT_RIFLE + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_AXMC，' + ItemTpl.SNIPERRIFLE_ACCURACY_INTERNATIONAL_AXMC_338_LM_BOLTACTION_SNIPER_RIFLE + ' not found');
     return;
   }
 
-  const magazine = tables.templates.items[ItemTpl.MAGAZINE_556X45_STANAG_30RND] || null;
+  const magazine = tables.templates.items[ItemTpl.MAGAZINE_86X70_AXMC_338LM_10RND] || null;
   if(!magazine) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_M4A1，' + ItemTpl.MAGAZINE_556X45_STANAG_30RND + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_AXMC，' + ItemTpl.MAGAZINE_86X70_AXMC_338LM_10RND + ' not found');
     return;
   }
 
@@ -37,14 +37,14 @@ export default function addExtendMagazine_M4A1(logger: ILogger,customItemService
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'M4A1 extended magazine',
+        name: 'AXMC extended magazine',
         shortName: 'Extended',
-        description: 'M4A1 extended magazine'
+        description: 'AXMC extended magazine'
       },
       ch: {
-        name: 'M4A1 扩容弹匣',
+        name: 'AXMC 扩容弹匣',
         shortName: '扩容',
-        description: 'M4A1 扩容弹匣'
+        description: 'AXMC 扩容弹匣'
       }
     },
     overrideProperties: {
@@ -75,11 +75,11 @@ export default function addExtendMagazine_M4A1(logger: ILogger,customItemService
 
   const createResult = customItemService.createItemFromClone(newItem);
   if(!createResult.success) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_M4A1，' + createResult.errors.join('、'));
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_AXMC，' + createResult.errors.join('、'));
     return;
   }
 
-  const assort1 = tables.traders[Traders.PEACEKEEPER].assort;
+  const assort1 = tables.traders[Traders.JAEGER].assort;
   assort1.items.push({
     _id: assortId1,
     _tpl: createResult.itemId,
@@ -125,5 +125,5 @@ export default function addExtendMagazine_M4A1(logger: ILogger,customItemService
     break;
   }
 
-  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_M4A1，Id：' + createResult.itemId);
+  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_AXMC，Id：' + createResult.itemId);
 }

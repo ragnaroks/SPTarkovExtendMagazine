@@ -79,7 +79,7 @@ export default function addExtendMagazine_RD704(logger: ILogger,customItemServic
     return;
   }
 
-  const assort1 = tables.traders[Traders.MECHANIC].assort;
+  const assort1 = tables.traders[Traders.PRAPOR].assort;
   assort1.items.push({
     _id: assortId1,
     _tpl: createResult.itemId,

@@ -13,4 +13,4 @@ to keep it simple, each weapon has its own dedicated extended magazine, although
 unarchive released zip file and put them in your SPTarkov game folder like `C:\EscapeFromTarkov`, it is should be have the file `SPT.Server.exe` there.
 
 # preview
-![list](./assets/1.png)
+![list](./list.png)

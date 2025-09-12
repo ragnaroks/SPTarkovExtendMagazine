@@ -79,7 +79,7 @@ export default function addExtendMagazine_MCXSPEAR(logger: ILogger,customItemSer
     return;
   }
 
-  const assort1 = tables.traders[Traders.MECHANIC].assort;
+  const assort1 = tables.traders[Traders.PEACEKEEPER].assort;
   assort1.items.push({
     _id: assortId1,
     _tpl: createResult.itemId,

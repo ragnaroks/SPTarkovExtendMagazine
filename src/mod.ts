@@ -60,6 +60,23 @@ import addExtendMagazine_SCARHF from './modifies/addExtendMagazine_SCARHF';
 import addExtendMagazine_SCARL from './modifies/addExtendMagazine_SCARL';
 import addExtendMagazine_SCARLF from './modifies/addExtendMagazine_SCARLF';
 import addExtendMagazine_Velociraptor from './modifies/addExtendMagazine_Velociraptor';
+import addExtendMagazine_AXMC from './modifies/addExtendMagazine_AXMC';
+import addExtendMagazine_DVL10 from './modifies/addExtendMagazine_DVL10';
+import addExtendMagazine_M700 from './modifies/addExtendMagazine_M700';
+import addExtendMagazine_MosinSniper from './modifies/addExtendMagazine_MosinSniper';
+import addExtendMagazine_MosinInfantry from './modifies/addExtendMagazine_MosinInfantry';
+import addExtendMagazine_SV98 from './modifies/addExtendMagazine_SV98';
+import addExtendMagazine_T5000M from './modifies/addExtendMagazine_T5000M';
+import addExtendMagazine_TRGM10 from './modifies/addExtendMagazine_TRGM10';
+import addExtendMagazine_VPO215 from './modifies/addExtendMagazine_VPO215';
+import addExtendMagazine_AK50 from './modifies/addExtendMagazine_AK50';
+import addExtendMagazine_G28 from './modifies/addExtendMagazine_G28';
+import addExtendMagazine_M1A from './modifies/addExtendMagazine_M1A';
+import addExtendMagazine_MK18 from './modifies/addExtendMagazine_MK18';
+import addExtendMagazine_RSASS from './modifies/addExtendMagazine_RSASS';
+import addExtendMagazine_SR25 from './modifies/addExtendMagazine_SR25';
+import addExtendMagazine_SVDS from './modifies/addExtendMagazine_SVDS';
+import addExtendMagazine_VSS from './modifies/addExtendMagazine_VSS';
 
 // example：https://github.com/sp-tarkov/mod-examples
 
@@ -134,6 +151,24 @@ class Mod implements IPreSptLoadMod,IPostDBLoadMod,IPostSptLoadMod {
     addExtendMagazine_SCARL(this.logger,this.customItemService,tables);
     addExtendMagazine_SCARLF(this.logger,this.customItemService,tables);
     addExtendMagazine_Velociraptor(this.logger,this.customItemService,tables);
+    addExtendMagazine_AXMC(this.logger,this.customItemService,tables);
+    addExtendMagazine_DVL10(this.logger,this.customItemService,tables);
+    addExtendMagazine_M700(this.logger,this.customItemService,tables);
+    addExtendMagazine_MosinSniper(this.logger,this.customItemService,tables);
+    addExtendMagazine_MosinInfantry(this.logger,this.customItemService,tables);
+    addExtendMagazine_SV98(this.logger,this.customItemService,tables);
+    addExtendMagazine_T5000M(this.logger,this.customItemService,tables);
+    addExtendMagazine_TRGM10(this.logger,this.customItemService,tables);
+    addExtendMagazine_VPO215(this.logger,this.customItemService,tables);
+    addExtendMagazine_AK50(this.logger,this.customItemService,tables);
+    addExtendMagazine_G28(this.logger,this.customItemService,tables);
+    addExtendMagazine_M1A(this.logger,this.customItemService,tables);
+    addExtendMagazine_MK18(this.logger,this.customItemService,tables);
+    addExtendMagazine_RSASS(this.logger,this.customItemService,tables);
+    addExtendMagazine_SR25(this.logger,this.customItemService,tables);
+    addExtendMagazine_SVDS(this.logger,this.customItemService,tables);
+    addExtendMagazine_VSS(this.logger,this.customItemService,tables);
+    
 
     //
     this.logger.success('[SPTarkovExtendMagazine]: done');

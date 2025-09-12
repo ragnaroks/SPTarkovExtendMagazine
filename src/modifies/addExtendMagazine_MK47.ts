@@ -79,7 +79,7 @@ export default function addExtendMagazine_MK47(logger: ILogger,customItemService
     return;
   }
 
-  const assort1 = tables.traders[Traders.MECHANIC].assort;
+  const assort1 = tables.traders[Traders.PEACEKEEPER].assort;
   assort1.items.push({
     _id: assortId1,
     _tpl: createResult.itemId,

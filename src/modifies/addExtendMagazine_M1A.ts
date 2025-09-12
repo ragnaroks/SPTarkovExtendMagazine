@@ -7,22 +7,22 @@ import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
 import idcalc from '../helpers/idcalc';
 
-const baseId: string = '68c4315f5882ca21d84cae00';
+const baseId: string = '68c44446bd8ff16713dd5600';
 const newItemId: string = idcalc(baseId,0x01);
 const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_M4A1(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
-  const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_COLT_M4A1_556X45_ASSAULT_RIFLE] || null;
+export default function addExtendMagazine_M1A(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+  const weapon = tables.templates.items[ItemTpl.MARKSMANRIFLE_SPRINGFIELD_ARMORY_M1A_762X51_RIFLE] || null;
   if(!weapon) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_M4A1，' + ItemTpl.ASSAULTRIFLE_COLT_M4A1_556X45_ASSAULT_RIFLE + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_M1A，' + ItemTpl.MARKSMANRIFLE_SPRINGFIELD_ARMORY_M1A_762X51_RIFLE + ' not found');
     return;
   }
 
-  const magazine = tables.templates.items[ItemTpl.MAGAZINE_556X45_STANAG_30RND] || null;
+  const magazine = tables.templates.items[ItemTpl.MAGAZINE_762X51_M14_30RND] || null;
   if(!magazine) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_M4A1，' + ItemTpl.MAGAZINE_556X45_STANAG_30RND + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_M1A，' + ItemTpl.MAGAZINE_762X51_M14_30RND + ' not found');
     return;
   }
 
@@ -37,14 +37,14 @@ export default function addExtendMagazine_M4A1(logger: ILogger,customItemService
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
-        name: 'M4A1 extended magazine',
+        name: 'M1A extended magazine',
         shortName: 'Extended',
-        description: 'M4A1 extended magazine'
+        description: 'M1A extended magazine'
       },
       ch: {
-        name: 'M4A1 扩容弹匣',
+        name: 'M1A 扩容弹匣',
         shortName: '扩容',
-        description: 'M4A1 扩容弹匣'
+        description: 'M1A 扩容弹匣'
       }
     },
     overrideProperties: {
@@ -75,7 +75,7 @@ export default function addExtendMagazine_M4A1(logger: ILogger,customItemService
 
   const createResult = customItemService.createItemFromClone(newItem);
   if(!createResult.success) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_M4A1，' + createResult.errors.join('、'));
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_M1A，' + createResult.errors.join('、'));
     return;
   }
 
@@ -125,5 +125,5 @@ export default function addExtendMagazine_M4A1(logger: ILogger,customItemService
     break;
   }
 
-  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_M4A1，Id：' + createResult.itemId);
+  logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_M1A，Id：' + createResult.itemId);
 }
