@@ -13,10 +13,10 @@ const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_RD704(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
-  const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_CMMG_MK47_MUTANT_762X39_ASSAULT_RIFLE] || null;
+export default function addExtendMagazine_RD704(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables) {
+  const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_RIFLE_DYNAMICS_RD704_762X39_ASSAULT_RIFLE] || null;
   if(!weapon) {
-    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RD704，' + ItemTpl.ASSAULTRIFLE_CMMG_MK47_MUTANT_762X39_ASSAULT_RIFLE + ' not found');
+    logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RD704，' + ItemTpl.ASSAULTRIFLE_RIFLE_DYNAMICS_RD704_762X39_ASSAULT_RIFLE + ' not found');
     return;
   }
 
