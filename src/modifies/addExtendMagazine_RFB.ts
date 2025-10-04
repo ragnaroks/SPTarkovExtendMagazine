@@ -5,6 +5,7 @@ import {IDatabaseTables} from '@spt/models/spt/server/IDatabaseTables';
 import {ILogger} from '@spt/models/spt/utils/ILogger';
 import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
+import {IBotConfig} from '@spt/models/spt/config/IBotConfig';
 import idcalc from '../helpers/idcalc';
 
 const baseId: string = '68c41a85064268822d679f00';
@@ -13,7 +14,7 @@ const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_RFB(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables) {
+export default function addExtendMagazine_RFB(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables,botConfig:IBotConfig) {
   const weapon = tables.templates.items[ItemTpl.MARKSMANRIFLE_KELTEC_RFB_762X51_RIFLE] || null;
   if(!weapon) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，' + ItemTpl.MARKSMANRIFLE_KELTEC_RFB_762X51_RIFLE + ' not found');
@@ -81,6 +82,12 @@ export default function addExtendMagazine_RFB(logger: ILogger,modConfig:ModConfi
   if(!createResult.success) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_RFB，' + createResult.errors.join('、'));
     return;
+  }
+
+  if(!!botConfig.equipment['pmc']){
+    for (const element of botConfig.equipment['pmc'].blacklist) {
+      element.equipment['mod_magazine'].push(createResult.itemId);
+    }
   }
 
   const assort1 = tables.traders[Traders.PEACEKEEPER].assort;

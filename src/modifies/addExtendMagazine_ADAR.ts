@@ -5,6 +5,7 @@ import {IDatabaseTables} from '@spt/models/spt/server/IDatabaseTables';
 import {ILogger} from '@spt/models/spt/utils/ILogger';
 import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
+import {IBotConfig} from '@spt/models/spt/config/IBotConfig';
 import idcalc from '../helpers/idcalc';
 
 const baseId: string = '68c4153f8add504746fa1c00';
@@ -13,7 +14,7 @@ const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_ADAR(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables) {
+export default function addExtendMagazine_ADAR(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables,botConfig:IBotConfig) {
   const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_ADAR_215_556X45_CARBINE] || null;
   if(!weapon) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_ADAR，' + ItemTpl.ASSAULTRIFLE_ADAR_215_556X45_CARBINE + ' not found');
@@ -81,6 +82,12 @@ export default function addExtendMagazine_ADAR(logger: ILogger,modConfig:ModConf
   if(!createResult.success) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_ADAR，' + createResult.errors.join('、'));
     return;
+  }
+
+  if(!!botConfig.equipment['pmc']){
+    for (const element of botConfig.equipment['pmc'].blacklist) {
+      element.equipment['mod_magazine'].push(createResult.itemId);
+    }
   }
 
   const assort1 = tables.traders[Traders.PEACEKEEPER].assort;

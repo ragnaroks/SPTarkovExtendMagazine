@@ -5,6 +5,7 @@ import {IDatabaseTables} from '@spt/models/spt/server/IDatabaseTables';
 import {ILogger} from '@spt/models/spt/utils/ILogger';
 import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
+import {IBotConfig} from '@spt/models/spt/config/IBotConfig';
 import idcalc from '../helpers/idcalc';
 
 const baseId: string = '68c45cfe25fbc6134186e000';
@@ -13,7 +14,7 @@ const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_FN57F(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables) {
+export default function addExtendMagazine_FN57F(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables,botConfig:IBotConfig) {
   const weapon = tables.templates.items[ItemTpl.PISTOL_FN_FIVESEVEN_MK2_57X28_PISTOL_FDE] || null;
   if(!weapon) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_FN57F，' + ItemTpl.PISTOL_FN_FIVESEVEN_MK2_57X28_PISTOL_FDE + ' not found');
@@ -81,6 +82,12 @@ export default function addExtendMagazine_FN57F(logger: ILogger,modConfig:ModCon
   if(!createResult.success) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_FN57F，' + createResult.errors.join('、'));
     return;
+  }
+
+  if(!!botConfig.equipment['pmc']){
+    for (const element of botConfig.equipment['pmc'].blacklist) {
+      element.equipment['mod_magazine'].push(createResult.itemId);
+    }
   }
 
   const assort1 = tables.traders[Traders.PEACEKEEPER].assort;

@@ -5,6 +5,7 @@ import {IDatabaseTables} from '@spt/models/spt/server/IDatabaseTables';
 import {ILogger} from '@spt/models/spt/utils/ILogger';
 import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
+import {IBotConfig} from '@spt/models/spt/config/IBotConfig';
 import idcalc from '../helpers/idcalc';
 
 const baseId: string = '68c44b2dffa4182f6a8c8f00';
@@ -13,7 +14,7 @@ const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_KS23M(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables) {
+export default function addExtendMagazine_KS23M(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables,botConfig:IBotConfig) {
   const weapon = tables.templates.items[ItemTpl.SHOTGUN_TOZ_KS23M_23X75MM_PUMPACTION] || null;
   if(!weapon) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_KS23M，' + ItemTpl.SHOTGUN_TOZ_KS23M_23X75MM_PUMPACTION + ' not found');
@@ -81,6 +82,12 @@ export default function addExtendMagazine_KS23M(logger: ILogger,modConfig:ModCon
   if(!createResult.success) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_KS23M，' + createResult.errors.join('、'));
     return;
+  }
+
+  if(!!botConfig.equipment['pmc']){
+    for (const element of botConfig.equipment['pmc'].blacklist) {
+      element.equipment['mod_magazine'].push(createResult.itemId);
+    }
   }
 
   const assort1 = tables.traders[Traders.PRAPOR].assort;

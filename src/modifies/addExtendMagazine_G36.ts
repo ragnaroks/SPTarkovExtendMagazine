@@ -5,6 +5,7 @@ import {IDatabaseTables} from '@spt/models/spt/server/IDatabaseTables';
 import {ILogger} from '@spt/models/spt/utils/ILogger';
 import {CustomItemService} from '@spt/services/mod/CustomItemService';
 import {Traders} from '@spt/models/enums/Traders';
+import {IBotConfig} from '@spt/models/spt/config/IBotConfig';
 import idcalc from '../helpers/idcalc';
 
 const baseId: string = '68c43081521eaf620c42b100';
@@ -13,7 +14,7 @@ const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_G36(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables) {
+export default function addExtendMagazine_G36(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables,botConfig:IBotConfig) {
   const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_HK_G36_556X45_ASSAULT_RIFLE] || null;
   if(!weapon) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_G36，' + ItemTpl.ASSAULTRIFLE_HK_G36_556X45_ASSAULT_RIFLE + ' not found');
@@ -81,6 +82,12 @@ export default function addExtendMagazine_G36(logger: ILogger,modConfig:ModConfi
   if(!createResult.success) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_G36，' + createResult.errors.join('、'));
     return;
+  }
+
+  if(!!botConfig.equipment['pmc']){
+    for (const element of botConfig.equipment['pmc'].blacklist) {
+      element.equipment['mod_magazine'].push(createResult.itemId);
+    }
   }
 
   const assort1 = tables.traders[Traders.PEACEKEEPER].assort;
