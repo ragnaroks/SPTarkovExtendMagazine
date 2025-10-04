@@ -10,7 +10,7 @@ export declare class LocaleService {
     protected databaseServer: DatabaseServer;
     protected configServer: ConfigServer;
     protected localeConfig: ILocaleConfig;
-    constructor(logger: ILogger, databaseServer: DatabaseServer, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseServer: DatabaseServer, configServer: ConfigServer);
     /**
      * Get the eft globals db file based on the configured locale in config/locale.json, if not found, fall back to 'en'
      * @returns dictionary

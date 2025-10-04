@@ -13,7 +13,7 @@ const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_AK74M(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+export default function addExtendMagazine_AK74M(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables) {
   const weapon = tables.templates.items[ItemTpl.ASSAULTRIFLE_KALASHNIKOV_AK74M_545X39_ASSAULT_RIFLE] || null;
   if(!weapon) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_AK74M，' + ItemTpl.ASSAULTRIFLE_KALASHNIKOV_AK74M_545X39_ASSAULT_RIFLE + ' not found');
@@ -32,8 +32,8 @@ export default function addExtendMagazine_AK74M(logger: ILogger,customItemServic
     itemTplToClone: magazine._id,
     newId: newItemId,
     parentId: BaseClasses.MAGAZINE,
-    fleaPriceRoubles: newPrice * 7.5,
-    handbookPriceRoubles: newPrice * 5,
+    fleaPriceRoubles: newPrice * modConfig.magnification * 1.5,
+    handbookPriceRoubles: newPrice * modConfig.magnification,
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
@@ -70,7 +70,7 @@ export default function addExtendMagazine_AK74M(logger: ILogger,customItemServic
           _id: propsId1,
           _name: 'cartridges',
           _parent: newItemId,
-          _max_count: magazine._props.Cartridges[0]._max_count * 5,
+          _max_count: magazine._props.Cartridges[0]._max_count * modConfig.magnification,
           _props: magazine._props.Cartridges[0]._props
         }
       ]

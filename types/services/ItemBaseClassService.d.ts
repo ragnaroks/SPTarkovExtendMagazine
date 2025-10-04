@@ -12,7 +12,7 @@ export declare class ItemBaseClassService {
     protected itemBaseClassesCache: Record<string, string[]>;
     protected items: Record<string, ITemplateItem>;
     protected cacheGenerated: boolean;
-    constructor(logger: ILogger, localisationService: LocalisationService, databaseService: DatabaseService);
+    constructor(logger: ILogger,modConfig:ModConfig, localisationService: LocalisationService, databaseService: DatabaseService);
     /**
      * Create cache and store inside ItemBaseClassService
      * Store a dict of an items tpl to the base classes it and its parents have

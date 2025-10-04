@@ -35,7 +35,7 @@ export declare class RagfairServerHelper {
     protected ragfairConfig: IRagfairConfig;
     protected questConfig: IQuestConfig;
     protected static goodsReturnedTemplate: string;
-    constructor(logger: ILogger, randomUtil: RandomUtil, timeUtil: TimeUtil, saveServer: SaveServer, databaseService: DatabaseService, profileHelper: ProfileHelper, itemHelper: ItemHelper, traderHelper: TraderHelper, mailSendService: MailSendService, localisationService: LocalisationService, itemFilterService: ItemFilterService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, timeUtil: TimeUtil, saveServer: SaveServer, databaseService: DatabaseService, profileHelper: ProfileHelper, itemHelper: ItemHelper, traderHelper: TraderHelper, mailSendService: MailSendService, localisationService: LocalisationService, itemFilterService: ItemFilterService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Is item valid / on blacklist / quest item
      * @param itemDetails

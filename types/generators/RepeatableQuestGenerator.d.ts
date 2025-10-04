@@ -29,7 +29,7 @@ export declare class RepeatableQuestGenerator {
     protected cloner: ICloner;
     protected questConfig: IQuestConfig;
     protected maxRandomNumberAttempts: number;
-    constructor(logger: ILogger, hashUtil: HashUtil, randomUtil: RandomUtil, mathUtil: MathUtil, databaseService: DatabaseService, itemHelper: ItemHelper, localisationService: LocalisationService, repeatableQuestHelper: RepeatableQuestHelper, repeatableQuestRewardGenerator: RepeatableQuestRewardGenerator, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, randomUtil: RandomUtil, mathUtil: MathUtil, databaseService: DatabaseService, itemHelper: ItemHelper, localisationService: LocalisationService, repeatableQuestHelper: RepeatableQuestHelper, repeatableQuestRewardGenerator: RepeatableQuestRewardGenerator, configServer: ConfigServer, cloner: ICloner);
     /**
      * This method is called by /GetClientRepeatableQuests/ and creates one element of quest type format (see assets/database/templates/repeatableQuests.json).
      * It randomly draws a quest type (currently Elimination, Completion or Exploration) as well as a trader who is providing the quest

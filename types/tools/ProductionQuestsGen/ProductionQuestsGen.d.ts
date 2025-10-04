@@ -10,7 +10,7 @@ export declare class ProductionQuestsGen {
     private questProductionOutputList;
     private questProductionMap;
     private blacklistedProductions;
-    constructor(databaseServer: DatabaseServer, logger: ILogger, fileSystemSync: FileSystemSync, onLoadComponents: OnLoad[]);
+    constructor(databaseServer: DatabaseServer, logger: ILogger,modConfig:ModConfig, fileSystemSync: FileSystemSync, onLoadComponents: OnLoad[]);
     run(): Promise<void>;
     private updateProductionQuests;
     private isValidQuestProduction;

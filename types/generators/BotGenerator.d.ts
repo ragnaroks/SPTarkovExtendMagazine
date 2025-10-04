@@ -42,7 +42,7 @@ export declare class BotGenerator {
     protected cloner: ICloner;
     protected botConfig: IBotConfig;
     protected pmcConfig: IPmcConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, randomUtil: RandomUtil, timeUtil: TimeUtil, profileHelper: ProfileHelper, databaseService: DatabaseService, botInventoryGenerator: BotInventoryGenerator, botLevelGenerator: BotLevelGenerator, botEquipmentFilterService: BotEquipmentFilterService, weightedRandomHelper: WeightedRandomHelper, botHelper: BotHelper, botGeneratorHelper: BotGeneratorHelper, seasonalEventService: SeasonalEventService, itemFilterService: ItemFilterService, botNameService: BotNameService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, randomUtil: RandomUtil, timeUtil: TimeUtil, profileHelper: ProfileHelper, databaseService: DatabaseService, botInventoryGenerator: BotInventoryGenerator, botLevelGenerator: BotLevelGenerator, botEquipmentFilterService: BotEquipmentFilterService, weightedRandomHelper: WeightedRandomHelper, botHelper: BotHelper, botGeneratorHelper: BotGeneratorHelper, seasonalEventService: SeasonalEventService, itemFilterService: ItemFilterService, botNameService: BotNameService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Generate a player scav bot object
      * @param role e.g. assault / pmcbot

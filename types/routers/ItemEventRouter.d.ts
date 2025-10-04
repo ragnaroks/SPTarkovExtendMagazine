@@ -13,7 +13,7 @@ export declare class ItemEventRouter {
     protected localisationService: LocalisationService;
     protected eventOutputHolder: EventOutputHolder;
     protected cloner: ICloner;
-    constructor(logger: ILogger, profileHelper: ProfileHelper, itemEventRouters: ItemEventRouterDefinition[], localisationService: LocalisationService, eventOutputHolder: EventOutputHolder, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, profileHelper: ProfileHelper, itemEventRouters: ItemEventRouterDefinition[], localisationService: LocalisationService, eventOutputHolder: EventOutputHolder, cloner: ICloner);
     /**
      * @param info Event request
      * @param sessionID Session id

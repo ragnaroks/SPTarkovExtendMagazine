@@ -57,7 +57,7 @@ export declare class RagfairOfferHelper {
     protected ragfairConfig: IRagfairConfig;
     protected questConfig: IQuestConfig;
     protected botConfig: IBotConfig;
-    constructor(logger: ILogger, timeUtil: TimeUtil, hashUtil: HashUtil, eventOutputHolder: EventOutputHolder, databaseService: DatabaseService, traderHelper: TraderHelper, saveServer: SaveServer, itemHelper: ItemHelper, botHelper: BotHelper, paymentHelper: PaymentHelper, presetHelper: PresetHelper, profileHelper: ProfileHelper, questHelper: QuestHelper, ragfairServerHelper: RagfairServerHelper, ragfairSortHelper: RagfairSortHelper, ragfairHelper: RagfairHelper, ragfairOfferService: RagfairOfferService, ragfairRequiredItemsService: RagfairRequiredItemsService, localeService: LocaleService, localisationService: LocalisationService, mailSendService: MailSendService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, hashUtil: HashUtil, eventOutputHolder: EventOutputHolder, databaseService: DatabaseService, traderHelper: TraderHelper, saveServer: SaveServer, itemHelper: ItemHelper, botHelper: BotHelper, paymentHelper: PaymentHelper, presetHelper: PresetHelper, profileHelper: ProfileHelper, questHelper: QuestHelper, ragfairServerHelper: RagfairServerHelper, ragfairSortHelper: RagfairSortHelper, ragfairHelper: RagfairHelper, ragfairOfferService: RagfairOfferService, ragfairRequiredItemsService: RagfairRequiredItemsService, localeService: LocaleService, localisationService: LocalisationService, mailSendService: MailSendService, configServer: ConfigServer);
     /**
      * Passthrough to ragfairOfferService.getOffers(), get flea offers a player should see
      * @param searchRequest Data from client

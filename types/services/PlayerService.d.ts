@@ -8,7 +8,7 @@ export declare class PlayerService {
     protected timeUtil: TimeUtil;
     protected localisationService: LocalisationService;
     protected databaseService: DatabaseService;
-    constructor(logger: ILogger, timeUtil: TimeUtil, localisationService: LocalisationService, databaseService: DatabaseService);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, localisationService: LocalisationService, databaseService: DatabaseService);
     /**
      * Get level of player
      * @param pmcData Player profile

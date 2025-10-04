@@ -23,7 +23,7 @@ export declare class HealthController {
     protected httpResponse: HttpResponseUtil;
     protected healthHelper: HealthHelper;
     protected cloner: ICloner;
-    constructor(logger: ILogger, eventOutputHolder: EventOutputHolder, itemHelper: ItemHelper, paymentService: PaymentService, inventoryHelper: InventoryHelper, localisationService: LocalisationService, httpResponse: HttpResponseUtil, healthHelper: HealthHelper, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, eventOutputHolder: EventOutputHolder, itemHelper: ItemHelper, paymentService: PaymentService, inventoryHelper: InventoryHelper, localisationService: LocalisationService, httpResponse: HttpResponseUtil, healthHelper: HealthHelper, cloner: ICloner);
     /**
      * When healing in menu
      * @param pmcData Player profile

@@ -32,7 +32,7 @@ export declare class ItemHelper {
     protected compareUtil: CompareUtil;
     protected cloner: ICloner;
     protected readonly defaultInvalidBaseTypes: string[];
-    constructor(logger: ILogger, hashUtil: HashUtil, jsonUtil: JsonUtil, randomUtil: RandomUtil, mathUtil: MathUtil, databaseService: DatabaseService, handbookHelper: HandbookHelper, itemBaseClassService: ItemBaseClassService, itemFilterService: ItemFilterService, localisationService: LocalisationService, localeService: LocaleService, compareUtil: CompareUtil, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, jsonUtil: JsonUtil, randomUtil: RandomUtil, mathUtil: MathUtil, databaseService: DatabaseService, handbookHelper: HandbookHelper, itemBaseClassService: ItemBaseClassService, itemFilterService: ItemFilterService, localisationService: LocalisationService, localeService: LocaleService, compareUtil: CompareUtil, cloner: ICloner);
     /**
      * Does the provided pool of items contain the desired item
      * @param itemPool Item collection to check

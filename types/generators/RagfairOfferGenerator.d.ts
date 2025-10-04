@@ -56,7 +56,7 @@ export declare class RagfairOfferGenerator {
     }[];
     /** Internal counter to ensure each offer created has a unique value for its intId property */
     protected offerCounter: number;
-    constructor(logger: ILogger, hashUtil: HashUtil, randomUtil: RandomUtil, timeUtil: TimeUtil, databaseService: DatabaseService, ragfairServerHelper: RagfairServerHelper, profileHelper: ProfileHelper, handbookHelper: HandbookHelper, botHelper: BotHelper, saveServer: SaveServer, presetHelper: PresetHelper, ragfairAssortGenerator: RagfairAssortGenerator, ragfairOfferService: RagfairOfferService, ragfairPriceService: RagfairPriceService, localisationService: LocalisationService, paymentHelper: PaymentHelper, fenceService: FenceService, itemHelper: ItemHelper, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, randomUtil: RandomUtil, timeUtil: TimeUtil, databaseService: DatabaseService, ragfairServerHelper: RagfairServerHelper, profileHelper: ProfileHelper, handbookHelper: HandbookHelper, botHelper: BotHelper, saveServer: SaveServer, presetHelper: PresetHelper, ragfairAssortGenerator: RagfairAssortGenerator, ragfairOfferService: RagfairOfferService, ragfairPriceService: RagfairPriceService, localisationService: LocalisationService, paymentHelper: PaymentHelper, fenceService: FenceService, itemHelper: ItemHelper, configServer: ConfigServer, cloner: ICloner);
     /**
      * Create a flea offer and store it in the Ragfair server offers array
      * @param userID Owner of the offer

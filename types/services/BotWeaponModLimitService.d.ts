@@ -20,7 +20,7 @@ export declare class BotWeaponModLimitService {
     protected configServer: ConfigServer;
     protected itemHelper: ItemHelper;
     protected botConfig: IBotConfig;
-    constructor(logger: ILogger, configServer: ConfigServer, itemHelper: ItemHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, configServer: ConfigServer, itemHelper: ItemHelper);
     /**
      * Initalise mod limits to be used when generating a weapon
      * @param botRole "assault", "bossTagilla" or "pmc"

@@ -25,7 +25,7 @@ export declare class FenceBaseAssortGenerator {
     protected configServer: ConfigServer;
     protected fenceService: FenceService;
     protected traderConfig: ITraderConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, databaseService: DatabaseService, handbookHelper: HandbookHelper, itemHelper: ItemHelper, presetHelper: PresetHelper, itemFilterService: ItemFilterService, seasonalEventService: SeasonalEventService, localisationService: LocalisationService, configServer: ConfigServer, fenceService: FenceService);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, databaseService: DatabaseService, handbookHelper: HandbookHelper, itemHelper: ItemHelper, presetHelper: PresetHelper, itemFilterService: ItemFilterService, seasonalEventService: SeasonalEventService, localisationService: LocalisationService, configServer: ConfigServer, fenceService: FenceService);
     /**
      * Create base fence assorts dynamically and store in memory
      */

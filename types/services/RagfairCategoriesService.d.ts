@@ -5,7 +5,7 @@ import type { ILogger } from "@spt/models/spt/utils/ILogger";
 export declare class RagfairCategoriesService {
     protected logger: ILogger;
     protected paymentHelper: PaymentHelper;
-    constructor(logger: ILogger, paymentHelper: PaymentHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, paymentHelper: PaymentHelper);
     /**
      * Get a dictionary of each item the play can see in their flea menu, filtered by what is available for them to buy
      * @param offers All offers in flea

@@ -46,7 +46,7 @@ export declare class QuestHelper {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected questConfig: IQuestConfig;
-    constructor(logger: ILogger, timeUtil: TimeUtil, hashUtil: HashUtil, itemHelper: ItemHelper, databaseService: DatabaseService, questConditionHelper: QuestConditionHelper, eventOutputHolder: EventOutputHolder, localeService: LocaleService, profileHelper: ProfileHelper, questRewardHelper: QuestRewardHelper, rewardHelper: RewardHelper, localisationService: LocalisationService, seasonalEventService: SeasonalEventService, traderHelper: TraderHelper, mailSendService: MailSendService, playerService: PlayerService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, hashUtil: HashUtil, itemHelper: ItemHelper, databaseService: DatabaseService, questConditionHelper: QuestConditionHelper, eventOutputHolder: EventOutputHolder, localeService: LocaleService, profileHelper: ProfileHelper, questRewardHelper: QuestRewardHelper, rewardHelper: RewardHelper, localisationService: LocalisationService, seasonalEventService: SeasonalEventService, traderHelper: TraderHelper, mailSendService: MailSendService, playerService: PlayerService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Get status of a quest in player profile by its id
      * @param pmcData Profile to search

@@ -17,7 +17,7 @@ export declare class HealthHelper {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected healthConfig: IHealthConfig;
-    constructor(logger: ILogger, timeUtil: TimeUtil, saveServer: SaveServer, databaseService: DatabaseService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, saveServer: SaveServer, databaseService: DatabaseService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Resets the profiles vitality/health and vitality/effects properties to their defaults
      * @param sessionID Session Id

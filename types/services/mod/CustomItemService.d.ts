@@ -13,7 +13,7 @@ export declare class CustomItemService {
     protected itemHelper: ItemHelper;
     protected itemBaseClassService: ItemBaseClassService;
     protected cloner: ICloner;
-    constructor(logger: ILogger, hashUtil: HashUtil, databaseService: DatabaseService, itemHelper: ItemHelper, itemBaseClassService: ItemBaseClassService, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, databaseService: DatabaseService, itemHelper: ItemHelper, itemBaseClassService: ItemBaseClassService, cloner: ICloner);
     /**
      * Create a new item from a cloned item base
      * WARNING - If no item id is supplied, an id will be generated, this id will be random every time you add an item and will not be the same on each subsequent server start

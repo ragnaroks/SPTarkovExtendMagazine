@@ -30,7 +30,7 @@ export declare class RagfairPriceService implements OnLoad {
     protected configServer: ConfigServer;
     protected ragfairConfig: IRagfairConfig;
     protected prices: IRagfairServerPrices;
-    constructor(handbookHelper: HandbookHelper, databaseService: DatabaseService, logger: ILogger, itemHelper: ItemHelper, presetHelper: PresetHelper, traderHelper: TraderHelper, randomUtil: RandomUtil, localisationService: LocalisationService, configServer: ConfigServer);
+    constructor(handbookHelper: HandbookHelper, databaseService: DatabaseService, logger: ILogger,modConfig:ModConfig, itemHelper: ItemHelper, presetHelper: PresetHelper, traderHelper: TraderHelper, randomUtil: RandomUtil, localisationService: LocalisationService, configServer: ConfigServer);
     /**
      * Generate static (handbook) and dynamic (prices.json) flea prices, store inside class as dictionaries
      */

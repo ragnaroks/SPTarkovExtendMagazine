@@ -13,7 +13,7 @@ const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_DE50L5(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+export default function addExtendMagazine_DE50L5(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables) {
   const weapon = tables.templates.items[ItemTpl.PISTOL_MAGNUM_RESEARCH_DESERT_EAGLE_L5_50_AE] || null;
   if(!weapon) {
     logger.error('[SPTarkovExtendMagazine]：addExtendMagazine_DE50L5，' + ItemTpl.PISTOL_MAGNUM_RESEARCH_DESERT_EAGLE_L5_50_AE + ' not found');
@@ -32,8 +32,8 @@ export default function addExtendMagazine_DE50L5(logger: ILogger,customItemServi
     itemTplToClone: magazine._id,
     newId: newItemId,
     parentId: BaseClasses.MAGAZINE,
-    fleaPriceRoubles: newPrice * 7.5,
-    handbookPriceRoubles: newPrice * 5,
+    fleaPriceRoubles: newPrice * modConfig.magnification * 1.5,
+    handbookPriceRoubles: newPrice * modConfig.magnification,
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
@@ -70,7 +70,7 @@ export default function addExtendMagazine_DE50L5(logger: ILogger,customItemServi
           _id: propsId1,
           _name: 'cartridges',
           _parent: newItemId,
-          _max_count: magazine._props.Cartridges[0]._max_count * 5,
+          _max_count: magazine._props.Cartridges[0]._max_count * modConfig.magnification,
           _props: magazine._props.Cartridges[0]._props
         }
       ]

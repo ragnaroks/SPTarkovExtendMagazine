@@ -15,7 +15,7 @@ export declare class WeatherController {
     protected raidWeatherService: RaidWeatherService;
     protected weatherHelper: WeatherHelper;
     protected weatherConfig: IWeatherConfig;
-    constructor(weatherGenerator: WeatherGenerator, logger: ILogger, configServer: ConfigServer, seasonalEventService: SeasonalEventService, raidWeatherService: RaidWeatherService, weatherHelper: WeatherHelper);
+    constructor(weatherGenerator: WeatherGenerator, logger: ILogger,modConfig:ModConfig, configServer: ConfigServer, seasonalEventService: SeasonalEventService, raidWeatherService: RaidWeatherService, weatherHelper: WeatherHelper);
     /** Handle client/weather */
     generate(): IWeatherData;
     /** Handle client/localGame/weather */

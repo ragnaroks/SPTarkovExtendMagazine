@@ -10,7 +10,7 @@ export declare class BotGenerationCacheService {
     protected botHelper: BotHelper;
     protected storedBots: Map<string, IBotBase[]>;
     protected activeBotsInRaid: IBotBase[];
-    constructor(logger: ILogger, randomUtil: RandomUtil, localisationService: LocalisationService, botHelper: BotHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, localisationService: LocalisationService, botHelper: BotHelper);
     /**
      * Store array of bots in cache, shuffle results before storage
      * @param botsToStore Bots we want to store in the cache

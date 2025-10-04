@@ -32,7 +32,7 @@ export declare class InsuranceService {
     protected cloner: ICloner;
     protected insured: Record<string, Record<string, IItem[]>>;
     protected insuranceConfig: IInsuranceConfig;
-    constructor(logger: ILogger, databaseService: DatabaseService, randomUtil: RandomUtil, itemHelper: ItemHelper, hashUtil: HashUtil, timeUtil: TimeUtil, saveServer: SaveServer, traderHelper: TraderHelper, profileHelper: ProfileHelper, localisationService: LocalisationService, mailSendService: MailSendService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, randomUtil: RandomUtil, itemHelper: ItemHelper, hashUtil: HashUtil, timeUtil: TimeUtil, saveServer: SaveServer, traderHelper: TraderHelper, profileHelper: ProfileHelper, localisationService: LocalisationService, mailSendService: MailSendService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Does player have insurance array
      * @param sessionId Player id

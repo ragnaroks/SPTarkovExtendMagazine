@@ -8,7 +8,7 @@ import { DatabaseService } from "@spt/services/DatabaseService";
 export declare class AchievementController {
     protected logger: ILogger;
     protected databaseService: DatabaseService;
-    constructor(logger: ILogger, databaseService: DatabaseService);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService);
     /**
      * Get base achievements
      * @param sessionID Session id

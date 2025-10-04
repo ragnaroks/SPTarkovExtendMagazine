@@ -8,7 +8,7 @@ export declare abstract class AbstractDialogueChatBot implements IDialogueChatBo
     protected logger: ILogger;
     protected mailSendService: MailSendService;
     protected chatCommands: IChatCommand[];
-    constructor(logger: ILogger, mailSendService: MailSendService, chatCommands: IChatCommand[]);
+    constructor(logger: ILogger,modConfig:ModConfig, mailSendService: MailSendService, chatCommands: IChatCommand[]);
     registerChatCommand(chatCommand: IChatCommand): void;
     abstract getChatBot(): IUserDialogInfo;
     protected abstract getUnrecognizedCommandMessage(): string;

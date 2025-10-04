@@ -29,7 +29,7 @@ export declare class LauncherController {
     protected preSptModLoader: PreSptModLoader;
     protected configServer: ConfigServer;
     protected coreConfig: ICoreConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, timeUtil: TimeUtil, randomUtil: RandomUtil, saveServer: SaveServer, httpServerHelper: HttpServerHelper, profileHelper: ProfileHelper, databaseService: DatabaseService, localisationService: LocalisationService, preSptModLoader: PreSptModLoader, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, timeUtil: TimeUtil, randomUtil: RandomUtil, saveServer: SaveServer, httpServerHelper: HttpServerHelper, profileHelper: ProfileHelper, databaseService: DatabaseService, localisationService: LocalisationService, preSptModLoader: PreSptModLoader, configServer: ConfigServer);
     connect(): IConnectResponse;
     /**
      * Get descriptive text for each of the profile edtions a player can choose, keyed by profile.json profile type e.g. "Edge Of Darkness"

@@ -26,7 +26,7 @@ export declare class QuestRewardHelper {
     protected presetHelper: PresetHelper;
     protected cloner: ICloner;
     protected rewardHelper: RewardHelper;
-    constructor(logger: ILogger, hashUtil: HashUtil, itemHelper: ItemHelper, databaseService: DatabaseService, profileHelper: ProfileHelper, paymentHelper: PaymentHelper, localisationService: LocalisationService, traderHelper: TraderHelper, presetHelper: PresetHelper, cloner: ICloner, rewardHelper: RewardHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, itemHelper: ItemHelper, databaseService: DatabaseService, profileHelper: ProfileHelper, paymentHelper: PaymentHelper, localisationService: LocalisationService, traderHelper: TraderHelper, presetHelper: PresetHelper, cloner: ICloner, rewardHelper: RewardHelper);
     /**
      * Give player quest rewards - Skills/exp/trader standing/items/assort unlocks - Returns reward items player earned
      * @param profileData Player profile (scav or pmc)

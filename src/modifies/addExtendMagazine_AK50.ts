@@ -13,6 +13,6 @@ const assortId1: string = idcalc(baseId,0xff);
 const assortId2: string = idcalc(baseId,0xfe);
 const propsId1: string = idcalc(baseId,0x02);
 
-export default function addExtendMagazine_AK50(logger: ILogger,customItemService: CustomItemService,tables: IDatabaseTables) {
+export default function addExtendMagazine_AK50(logger: ILogger,modConfig:ModConfig,customItemService: CustomItemService,tables: IDatabaseTables) {
   logger.success('[SPTarkovExtendMagazine]：addExtendMagazine_AK50，skipped');
 }

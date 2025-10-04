@@ -16,7 +16,7 @@ export declare class WebSocketServer {
     protected httpServerHelper: HttpServerHelper;
     protected webSocketConnectionHandlers: IWebSocketConnectionHandler[];
     protected webSocketServer: Server | undefined;
-    constructor(logger: ILogger, randomUtil: RandomUtil, jsonUtil: JsonUtil, localisationService: LocalisationService, httpServerHelper: HttpServerHelper, webSocketConnectionHandlers: IWebSocketConnectionHandler[]);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, jsonUtil: JsonUtil, localisationService: LocalisationService, httpServerHelper: HttpServerHelper, webSocketConnectionHandlers: IWebSocketConnectionHandler[]);
     getWebSocketServer(): Server | undefined;
     setupWebSocket(httpServer: https.Server): void;
     protected getRandomisedMessage(): string;

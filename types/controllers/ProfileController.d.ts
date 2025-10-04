@@ -27,7 +27,7 @@ export declare class ProfileController {
     protected playerScavGenerator: PlayerScavGenerator;
     protected profileHelper: ProfileHelper;
     protected itemHelper: ItemHelper;
-    constructor(logger: ILogger, cloner: ICloner, saveServer: SaveServer, databaseService: DatabaseService, createProfileService: CreateProfileService, playerScavGenerator: PlayerScavGenerator, profileHelper: ProfileHelper, itemHelper: ItemHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, cloner: ICloner, saveServer: SaveServer, databaseService: DatabaseService, createProfileService: CreateProfileService, playerScavGenerator: PlayerScavGenerator, profileHelper: ProfileHelper, itemHelper: ItemHelper);
     /**
      * Handle /launcher/profiles
      */

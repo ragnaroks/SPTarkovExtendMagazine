@@ -10,7 +10,7 @@ export declare class PostSptModLoader implements IModLoader {
     protected localisationService: LocalisationService;
     protected modTypeCheck: ModTypeCheck;
     protected container: DependencyContainer;
-    constructor(logger: ILogger, preSptModLoader: PreSptModLoader, localisationService: LocalisationService, modTypeCheck: ModTypeCheck);
+    constructor(logger: ILogger,modConfig:ModConfig, preSptModLoader: PreSptModLoader, localisationService: LocalisationService, modTypeCheck: ModTypeCheck);
     getModPath(mod: string): string;
     load(): Promise<void>;
     protected executeModsAsync(): Promise<void>;

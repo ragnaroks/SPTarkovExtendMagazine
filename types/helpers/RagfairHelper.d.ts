@@ -22,7 +22,7 @@ export declare class RagfairHelper {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected ragfairConfig: IRagfairConfig;
-    constructor(logger: ILogger, traderAssortHelper: TraderAssortHelper, databaseService: DatabaseService, handbookHelper: HandbookHelper, itemHelper: ItemHelper, ragfairLinkedItemService: RagfairLinkedItemService, utilityHelper: UtilityHelper, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, traderAssortHelper: TraderAssortHelper, databaseService: DatabaseService, handbookHelper: HandbookHelper, itemHelper: ItemHelper, ragfairLinkedItemService: RagfairLinkedItemService, utilityHelper: UtilityHelper, configServer: ConfigServer, cloner: ICloner);
     /**
      * Gets currency TAG from TPL
      * @param {string} currency

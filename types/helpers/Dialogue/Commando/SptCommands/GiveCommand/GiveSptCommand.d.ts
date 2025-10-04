@@ -34,7 +34,7 @@ export declare class GiveSptCommand implements ISptCommand {
     private static acceptableConfidence;
     private static excludedPresetItems;
     protected savedCommand: Map<string, SavedCommand>;
-    constructor(logger: ILogger, itemHelper: ItemHelper, hashUtil: HashUtil, presetHelper: PresetHelper, mailSendService: MailSendService, localeService: LocaleService, databaseService: DatabaseService, itemFilterService: ItemFilterService, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, itemHelper: ItemHelper, hashUtil: HashUtil, presetHelper: PresetHelper, mailSendService: MailSendService, localeService: LocaleService, databaseService: DatabaseService, itemFilterService: ItemFilterService, cloner: ICloner);
     getCommand(): string;
     getCommandHelp(): string;
     performAction(commandHandler: IUserDialogInfo, sessionId: string, request: ISendMessageRequest): string;

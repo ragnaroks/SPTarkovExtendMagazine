@@ -64,7 +64,7 @@ export declare class InventoryController {
     protected eventOutputHolder: EventOutputHolder;
     protected httpResponseUtil: HttpResponseUtil;
     protected cloner: ICloner;
-    constructor(logger: ILogger, hashUtil: HashUtil, itemHelper: ItemHelper, randomUtil: RandomUtil, databaseService: DatabaseService, fenceService: FenceService, presetHelper: PresetHelper, inventoryHelper: InventoryHelper, questHelper: QuestHelper, hideoutHelper: HideoutHelper, ragfairOfferService: RagfairOfferService, mapMarkerService: MapMarkerService, profileHelper: ProfileHelper, paymentHelper: PaymentHelper, traderHelper: TraderHelper, localisationService: LocalisationService, playerService: PlayerService, lootGenerator: LootGenerator, eventOutputHolder: EventOutputHolder, httpResponseUtil: HttpResponseUtil, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, itemHelper: ItemHelper, randomUtil: RandomUtil, databaseService: DatabaseService, fenceService: FenceService, presetHelper: PresetHelper, inventoryHelper: InventoryHelper, questHelper: QuestHelper, hideoutHelper: HideoutHelper, ragfairOfferService: RagfairOfferService, mapMarkerService: MapMarkerService, profileHelper: ProfileHelper, paymentHelper: PaymentHelper, traderHelper: TraderHelper, localisationService: LocalisationService, playerService: PlayerService, lootGenerator: LootGenerator, eventOutputHolder: EventOutputHolder, httpResponseUtil: HttpResponseUtil, cloner: ICloner);
     /**
      * Move Item
      * change location of item with parentId and slotId

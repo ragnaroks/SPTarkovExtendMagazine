@@ -42,7 +42,7 @@ export declare class BotInventoryGenerator {
     protected botEquipmentModGenerator: BotEquipmentModGenerator;
     protected configServer: ConfigServer;
     protected botConfig: IBotConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, randomUtil: RandomUtil, databaseService: DatabaseService, applicationContext: ApplicationContext, botWeaponGenerator: BotWeaponGenerator, botLootGenerator: BotLootGenerator, botGeneratorHelper: BotGeneratorHelper, profileHelper: ProfileHelper, botHelper: BotHelper, weightedRandomHelper: WeightedRandomHelper, itemHelper: ItemHelper, weatherHelper: WeatherHelper, localisationService: LocalisationService, botEquipmentFilterService: BotEquipmentFilterService, botEquipmentModPoolService: BotEquipmentModPoolService, botEquipmentModGenerator: BotEquipmentModGenerator, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, randomUtil: RandomUtil, databaseService: DatabaseService, applicationContext: ApplicationContext, botWeaponGenerator: BotWeaponGenerator, botLootGenerator: BotLootGenerator, botGeneratorHelper: BotGeneratorHelper, profileHelper: ProfileHelper, botHelper: BotHelper, weightedRandomHelper: WeightedRandomHelper, itemHelper: ItemHelper, weatherHelper: WeatherHelper, localisationService: LocalisationService, botEquipmentFilterService: BotEquipmentFilterService, botEquipmentModPoolService: BotEquipmentModPoolService, botEquipmentModGenerator: BotEquipmentModGenerator, configServer: ConfigServer);
     /**
      * Add equipment/weapons/loot to bot
      * @param sessionId Session id

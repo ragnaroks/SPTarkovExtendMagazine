@@ -13,7 +13,7 @@ export declare class BotHelper {
     protected configServer: ConfigServer;
     protected botConfig: IBotConfig;
     protected pmcConfig: IPmcConfig;
-    constructor(logger: ILogger, databaseService: DatabaseService, randomUtil: RandomUtil, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, randomUtil: RandomUtil, configServer: ConfigServer);
     /**
      * Get a template object for the specified botRole from bots.types db
      * @param role botRole to get template for

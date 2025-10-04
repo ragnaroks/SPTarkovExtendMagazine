@@ -29,7 +29,7 @@ export declare class DatabaseService {
     protected hashUtil: HashUtil;
     protected locationConfig: ILocationConfig;
     protected isDataValid: boolean;
-    constructor(logger: ILogger, databaseServer: DatabaseServer, localisationService: LocalisationService, hashUtil: HashUtil);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseServer: DatabaseServer, localisationService: LocalisationService, hashUtil: HashUtil);
     /**
      * @returns assets/database/
      */

@@ -11,7 +11,7 @@ export declare class BackupService {
     protected backupConfig: IBackupConfig;
     protected readonly activeServerMods: string[];
     protected readonly profileDir = "./user/profiles";
-    constructor(logger: ILogger, preSptModLoader: PreSptModLoader, configServer: ConfigServer, fileSystem: FileSystem);
+    constructor(logger: ILogger,modConfig:ModConfig, preSptModLoader: PreSptModLoader, configServer: ConfigServer, fileSystem: FileSystem);
     /**
      * Initializes the backup process.
      *

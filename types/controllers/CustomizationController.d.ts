@@ -27,7 +27,7 @@ export declare class CustomizationController {
         lowerParentId: string;
         upperParentId: string;
     };
-    constructor(logger: ILogger, eventOutputHolder: EventOutputHolder, databaseService: DatabaseService, saveServer: SaveServer, localisationService: LocalisationService, profileHelper: ProfileHelper, paymentService: PaymentService, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, eventOutputHolder: EventOutputHolder, databaseService: DatabaseService, saveServer: SaveServer, localisationService: LocalisationService, profileHelper: ProfileHelper, paymentService: PaymentService, cloner: ICloner);
     /**
      * Get purchasable clothing items from trader that match players side (usec/bear)
      * @param traderID trader to look up clothing for

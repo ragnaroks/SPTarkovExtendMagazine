@@ -16,7 +16,7 @@ export declare class BotLootCacheService {
     protected ragfairPriceService: RagfairPriceService;
     protected cloner: ICloner;
     protected lootCache: Record<string, IBotLootCache>;
-    constructor(logger: ILogger, itemHelper: ItemHelper, pmcLootGenerator: PMCLootGenerator, localisationService: LocalisationService, ragfairPriceService: RagfairPriceService, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, itemHelper: ItemHelper, pmcLootGenerator: PMCLootGenerator, localisationService: LocalisationService, ragfairPriceService: RagfairPriceService, cloner: ICloner);
     /**
      * Remove cached bot loot data
      */

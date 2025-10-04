@@ -21,7 +21,7 @@ export declare class RagfairServer {
     protected traderAssortHelper: TraderAssortHelper;
     protected configServer: ConfigServer;
     protected ragfairConfig: IRagfairConfig;
-    constructor(logger: ILogger, ragfairOfferGenerator: RagfairOfferGenerator, ragfairOfferService: RagfairOfferService, ragfairCategoriesService: RagfairCategoriesService, ragfairRequiredItemsService: RagfairRequiredItemsService, localisationService: LocalisationService, traderHelper: TraderHelper, traderAssortHelper: TraderAssortHelper, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, ragfairOfferGenerator: RagfairOfferGenerator, ragfairOfferService: RagfairOfferService, ragfairCategoriesService: RagfairCategoriesService, ragfairRequiredItemsService: RagfairRequiredItemsService, localisationService: LocalisationService, traderHelper: TraderHelper, traderAssortHelper: TraderAssortHelper, configServer: ConfigServer);
     load(): Promise<void>;
     update(): Promise<void>;
     /**

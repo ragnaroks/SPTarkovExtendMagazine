@@ -17,7 +17,7 @@ export declare class GiftService {
     protected profileHelper: ProfileHelper;
     protected configServer: ConfigServer;
     protected giftConfig: IGiftsConfig;
-    constructor(logger: ILogger, mailSendService: MailSendService, localisationService: LocalisationService, hashUtil: HashUtil, timeUtil: TimeUtil, profileHelper: ProfileHelper, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, mailSendService: MailSendService, localisationService: LocalisationService, hashUtil: HashUtil, timeUtil: TimeUtil, profileHelper: ProfileHelper, configServer: ConfigServer);
     /**
      * Does a gift with a specific ID exist in db
      * @param giftId Gift id to check for

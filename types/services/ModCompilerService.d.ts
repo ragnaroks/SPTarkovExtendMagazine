@@ -9,7 +9,7 @@ export declare class ModCompilerService {
     protected fileSystem: FileSystem;
     protected fileSystemSync: FileSystemSync;
     protected serverDependencies: string[];
-    constructor(logger: ILogger, modHashCacheService: ModHashCacheService, fileSystem: FileSystem, fileSystemSync: FileSystemSync);
+    constructor(logger: ILogger,modConfig:ModConfig, modHashCacheService: ModHashCacheService, fileSystem: FileSystem, fileSystemSync: FileSystemSync);
     /**
      * Convert a mods TS into JS
      * @param modName Name of mod

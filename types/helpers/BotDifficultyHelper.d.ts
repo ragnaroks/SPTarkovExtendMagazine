@@ -17,7 +17,7 @@ export declare class BotDifficultyHelper {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected pmcConfig: IPmcConfig;
-    constructor(logger: ILogger, databaseService: DatabaseService, randomUtil: RandomUtil, localisationService: LocalisationService, botHelper: BotHelper, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, randomUtil: RandomUtil, localisationService: LocalisationService, botHelper: BotHelper, configServer: ConfigServer, cloner: ICloner);
     /**
      * Get difficulty settings for desired bot type, if not found use assault bot types
      * @param type bot type to retrieve difficulty of

@@ -13,7 +13,7 @@ export declare class RepairHelper {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected repairConfig: IRepairConfig;
-    constructor(logger: ILogger, randomUtil: RandomUtil, databaseService: DatabaseService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, databaseService: DatabaseService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Alter an items durability after a repair by trader/repair kit
      * @param itemToRepair item to update durability details

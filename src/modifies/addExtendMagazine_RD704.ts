@@ -32,8 +32,8 @@ export default function addExtendMagazine_RD704(logger: ILogger,modConfig:ModCon
     itemTplToClone: magazine._id,
     newId: newItemId,
     parentId: BaseClasses.MAGAZINE,
-    fleaPriceRoubles: newPrice * 7.5,
-    handbookPriceRoubles: newPrice * 5,
+    fleaPriceRoubles: newPrice * modConfig.magnification * 1.5,
+    handbookPriceRoubles: newPrice * modConfig.magnification,
     handbookParentId: '5b5f754a86f774094242f19b',
     locales: {
       en: {
@@ -70,7 +70,7 @@ export default function addExtendMagazine_RD704(logger: ILogger,modConfig:ModCon
           _id: propsId1,
           _name: 'cartridges',
           _parent: newItemId,
-          _max_count: magazine._props.Cartridges[0]._max_count * 5,
+          _max_count: magazine._props.Cartridges[0]._max_count * modConfig.magnification,
           _props: magazine._props.Cartridges[0]._props
         }
       ]

@@ -17,7 +17,7 @@ export declare class DialogueHelper {
     protected notificationSendHelper: NotificationSendHelper;
     protected localisationService: LocalisationService;
     protected itemHelper: ItemHelper;
-    constructor(logger: ILogger, hashUtil: HashUtil, saveServer: SaveServer, databaseServer: DatabaseServer, notifierHelper: NotifierHelper, notificationSendHelper: NotificationSendHelper, localisationService: LocalisationService, itemHelper: ItemHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, saveServer: SaveServer, databaseServer: DatabaseServer, notifierHelper: NotifierHelper, notificationSendHelper: NotificationSendHelper, localisationService: LocalisationService, itemHelper: ItemHelper);
     /**
      * Get the preview contents of the last message in a dialogue.
      * @param dialogue

@@ -24,7 +24,7 @@ export declare class TraderSptCommand implements ISptCommand {
      */
     private static commandRegex;
     protected savedCommand: SavedCommand;
-    constructor(logger: ILogger, itemHelper: ItemHelper, hashUtil: HashUtil, presetHelper: PresetHelper, mailSendService: MailSendService, localeService: LocaleService, databaseService: DatabaseService);
+    constructor(logger: ILogger,modConfig:ModConfig, itemHelper: ItemHelper, hashUtil: HashUtil, presetHelper: PresetHelper, mailSendService: MailSendService, localeService: LocaleService, databaseService: DatabaseService);
     getCommand(): string;
     getCommandHelp(): string;
     performAction(commandHandler: IUserDialogInfo, sessionId: string, request: ISendMessageRequest): string;

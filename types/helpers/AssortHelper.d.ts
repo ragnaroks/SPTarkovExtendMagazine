@@ -12,7 +12,7 @@ export declare class AssortHelper {
     protected databaseServer: DatabaseServer;
     protected localisationService: LocalisationService;
     protected questHelper: QuestHelper;
-    constructor(logger: ILogger, itemHelper: ItemHelper, databaseServer: DatabaseServer, localisationService: LocalisationService, questHelper: QuestHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, itemHelper: ItemHelper, databaseServer: DatabaseServer, localisationService: LocalisationService, questHelper: QuestHelper);
     /**
      * Remove assorts from a trader that have not been unlocked yet (via player completing corresponding quest)
      * @param pmcProfile Player profile

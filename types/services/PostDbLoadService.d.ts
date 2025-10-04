@@ -37,7 +37,7 @@ export declare class PostDbLoadService {
     protected lootConfig: ILootConfig;
     protected botConfig: IBotConfig;
     protected itemConfig: IItemConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, databaseService: DatabaseService, localisationService: LocalisationService, customLocationWaveService: CustomLocationWaveService, openZoneService: OpenZoneService, seasonalEventService: SeasonalEventService, itemBaseClassService: ItemBaseClassService, pmcWaveGenerator: PmcWaveGenerator, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, databaseService: DatabaseService, localisationService: LocalisationService, customLocationWaveService: CustomLocationWaveService, openZoneService: OpenZoneService, seasonalEventService: SeasonalEventService, itemBaseClassService: ItemBaseClassService, pmcWaveGenerator: PmcWaveGenerator, configServer: ConfigServer, cloner: ICloner);
     performPostDbLoadActions(): void;
     protected removeExistingPmcWaves(): void;
     protected removeNewBeginningRequirementFromPrestige(): void;

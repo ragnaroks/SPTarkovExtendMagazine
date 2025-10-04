@@ -16,7 +16,7 @@ export declare class RagfairTaxService {
     protected profileHelper: ProfileHelper;
     protected cloner: ICloner;
     protected playerOfferTaxCache: Record<string, IStorePlayerOfferTaxAmountRequestData>;
-    constructor(logger: ILogger, databaseService: DatabaseService, ragfairPriceService: RagfairPriceService, itemHelper: ItemHelper, profileHelper: ProfileHelper, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, ragfairPriceService: RagfairPriceService, itemHelper: ItemHelper, profileHelper: ProfileHelper, cloner: ICloner);
     storeClientOfferTaxValue(sessionId: string, offer: IStorePlayerOfferTaxAmountRequestData): void;
     clearStoredOfferTaxById(offerIdToRemove: string): void;
     getStoredClientOfferTaxValueById(offerIdToGet: string): IStorePlayerOfferTaxAmountRequestData;

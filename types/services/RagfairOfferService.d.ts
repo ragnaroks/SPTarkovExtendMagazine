@@ -34,7 +34,7 @@ export declare class RagfairOfferService {
     protected expiredOffers: Record<string, IRagfairOffer>;
     protected ragfairConfig: IRagfairConfig;
     protected ragfairOfferHandler: RagfairOfferHolder;
-    constructor(logger: ILogger, timeUtil: TimeUtil, hashUtil: HashUtil, databaseService: DatabaseService, saveServer: SaveServer, ragfairServerHelper: RagfairServerHelper, itemHelper: ItemHelper, profileHelper: ProfileHelper, eventOutputHolder: EventOutputHolder, httpResponse: HttpResponseUtil, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, hashUtil: HashUtil, databaseService: DatabaseService, saveServer: SaveServer, ragfairServerHelper: RagfairServerHelper, itemHelper: ItemHelper, profileHelper: ProfileHelper, eventOutputHolder: EventOutputHolder, httpResponse: HttpResponseUtil, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Get all offers
      * @returns IRagfairOffer array

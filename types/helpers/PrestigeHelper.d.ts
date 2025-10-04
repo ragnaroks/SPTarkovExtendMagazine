@@ -15,7 +15,7 @@ export declare class PrestigeHelper {
     protected mailSendService: MailSendService;
     protected profileHelper: ProfileHelper;
     protected rewardHelper: RewardHelper;
-    constructor(logger: ILogger, cloner: ICloner, timeUtil: TimeUtil, databaseService: DatabaseService, mailSendService: MailSendService, profileHelper: ProfileHelper, rewardHelper: RewardHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, cloner: ICloner, timeUtil: TimeUtil, databaseService: DatabaseService, mailSendService: MailSendService, profileHelper: ProfileHelper, rewardHelper: RewardHelper);
     processPendingPrestige(oldProfile: ISptProfile, newProfile: ISptProfile, prestige: IPendingPrestige): void;
     protected addPrestigeRewardsToProfile(sessionId: string, newProfile: ISptProfile, rewards: IReward[]): void;
 }

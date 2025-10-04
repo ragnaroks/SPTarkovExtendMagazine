@@ -17,7 +17,7 @@ export declare class TraderPurchasePersisterService {
     protected localisationService: LocalisationService;
     protected configServer: ConfigServer;
     protected traderConfig: ITraderConfig;
-    constructor(logger: ILogger, timeUtil: TimeUtil, randomUtil: RandomUtil, profileHelper: ProfileHelper, localisationService: LocalisationService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, randomUtil: RandomUtil, profileHelper: ProfileHelper, localisationService: LocalisationService, configServer: ConfigServer);
     /**
      * Get the purchases made from a trader for this profile before the last trader reset
      * @param sessionId Session id

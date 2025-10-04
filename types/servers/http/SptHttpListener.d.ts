@@ -15,7 +15,7 @@ export declare class SptHttpListener implements IHttpListener {
     protected httpResponse: HttpResponseUtil;
     protected localisationService: LocalisationService;
     constructor(httpRouter: HttpRouter, // TODO: delay required
-    serializers: Serializer[], logger: ILogger, requestsLogger: ILogger, jsonUtil: JsonUtil, httpResponse: HttpResponseUtil, localisationService: LocalisationService);
+    serializers: Serializer[], logger: ILogger,modConfig:ModConfig, requestslogger: ILogger,modConfig:ModConfig, jsonUtil: JsonUtil, httpResponse: HttpResponseUtil, localisationService: LocalisationService);
     canHandle(_: string, req: IncomingMessage): boolean;
     handle(sessionId: string, req: IncomingMessage, resp: ServerResponse): Promise<void>;
     /**

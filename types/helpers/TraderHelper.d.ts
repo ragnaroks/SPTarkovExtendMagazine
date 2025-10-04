@@ -31,7 +31,7 @@ export declare class TraderHelper {
     protected traderConfig: ITraderConfig;
     /** Dictionary of item tpl and the highest trader sell rouble price */
     protected highestTraderPriceItems?: Record<string, number>;
-    constructor(logger: ILogger, databaseService: DatabaseService, profileHelper: ProfileHelper, handbookHelper: HandbookHelper, itemHelper: ItemHelper, playerService: PlayerService, localisationService: LocalisationService, fenceService: FenceService, timeUtil: TimeUtil, randomUtil: RandomUtil, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, profileHelper: ProfileHelper, handbookHelper: HandbookHelper, itemHelper: ItemHelper, playerService: PlayerService, localisationService: LocalisationService, fenceService: FenceService, timeUtil: TimeUtil, randomUtil: RandomUtil, configServer: ConfigServer);
     /**
      * Get a trader base object, update profile to reflect players current standing in profile
      * when trader not found in profile

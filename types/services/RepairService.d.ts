@@ -31,7 +31,7 @@ export declare class RepairService {
     protected localisationService: LocalisationService;
     protected configServer: ConfigServer;
     protected repairConfig: IRepairConfig;
-    constructor(logger: ILogger, databaseService: DatabaseService, profileHelper: ProfileHelper, randomUtil: RandomUtil, itemHelper: ItemHelper, traderHelper: TraderHelper, weightedRandomHelper: WeightedRandomHelper, paymentService: PaymentService, repairHelper: RepairHelper, localisationService: LocalisationService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, profileHelper: ProfileHelper, randomUtil: RandomUtil, itemHelper: ItemHelper, traderHelper: TraderHelper, weightedRandomHelper: WeightedRandomHelper, paymentService: PaymentService, repairHelper: RepairHelper, localisationService: LocalisationService, configServer: ConfigServer);
     /**
      * Use trader to repair an items durability
      * @param sessionID Session id

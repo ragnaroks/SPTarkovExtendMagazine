@@ -34,7 +34,7 @@ export declare class PlayerScavGenerator {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected playerScavConfig: IPlayerScavConfig;
-    constructor(logger: ILogger, randomUtil: RandomUtil, databaseService: DatabaseService, hashUtil: HashUtil, itemHelper: ItemHelper, botGeneratorHelper: BotGeneratorHelper, saveServer: SaveServer, profileHelper: ProfileHelper, botHelper: BotHelper, fenceService: FenceService, botLootCacheService: BotLootCacheService, localisationService: LocalisationService, botGenerator: BotGenerator, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, databaseService: DatabaseService, hashUtil: HashUtil, itemHelper: ItemHelper, botGeneratorHelper: BotGeneratorHelper, saveServer: SaveServer, profileHelper: ProfileHelper, botHelper: BotHelper, fenceService: FenceService, botLootCacheService: BotLootCacheService, localisationService: LocalisationService, botGenerator: BotGenerator, configServer: ConfigServer, cloner: ICloner);
     /**
      * Update a player profile to include a new player scav profile
      * @param sessionID session id to specify what profile is updated

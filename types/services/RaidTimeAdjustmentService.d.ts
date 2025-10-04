@@ -16,7 +16,7 @@ export declare class RaidTimeAdjustmentService {
     protected applicationContext: ApplicationContext;
     protected configServer: ConfigServer;
     protected locationConfig: ILocationConfig;
-    constructor(logger: ILogger, databaseService: DatabaseService, randomUtil: RandomUtil, weightedRandomHelper: WeightedRandomHelper, applicationContext: ApplicationContext, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, randomUtil: RandomUtil, weightedRandomHelper: WeightedRandomHelper, applicationContext: ApplicationContext, configServer: ConfigServer);
     /**
      * Make alterations to the base map data passed in
      * Loot multipliers/waves/wave start times

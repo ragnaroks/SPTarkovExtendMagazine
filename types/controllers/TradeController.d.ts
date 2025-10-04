@@ -46,7 +46,7 @@ export declare class TradeController {
     protected configServer: ConfigServer;
     protected ragfairConfig: IRagfairConfig;
     protected traderConfig: ITraderConfig;
-    constructor(logger: ILogger, databaseService: DatabaseService, eventOutputHolder: EventOutputHolder, tradeHelper: TradeHelper, timeUtil: TimeUtil, randomUtil: RandomUtil, hashUtil: HashUtil, itemHelper: ItemHelper, profileHelper: ProfileHelper, ragfairOfferHelper: RagfairOfferHelper, traderHelper: TraderHelper, ragfairServer: RagfairServer, httpResponse: HttpResponseUtil, localisationService: LocalisationService, ragfairPriceService: RagfairPriceService, mailSendService: MailSendService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, eventOutputHolder: EventOutputHolder, tradeHelper: TradeHelper, timeUtil: TimeUtil, randomUtil: RandomUtil, hashUtil: HashUtil, itemHelper: ItemHelper, profileHelper: ProfileHelper, ragfairOfferHelper: RagfairOfferHelper, traderHelper: TraderHelper, ragfairServer: RagfairServer, httpResponse: HttpResponseUtil, localisationService: LocalisationService, ragfairPriceService: RagfairPriceService, mailSendService: MailSendService, configServer: ConfigServer);
     /** Handle TradingConfirm event */
     confirmTrading(pmcData: IPmcData, request: IProcessBaseTradeRequestData, sessionID: string): IItemEventRouterResponse;
     /** Handle RagFairBuyOffer event */

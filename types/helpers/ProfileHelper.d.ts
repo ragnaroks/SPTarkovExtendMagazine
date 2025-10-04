@@ -31,7 +31,7 @@ export declare class ProfileHelper {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected inventoryConfig: IInventoryConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, watermark: Watermark, timeUtil: TimeUtil, saveServer: SaveServer, databaseService: DatabaseService, itemHelper: ItemHelper, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, watermark: Watermark, timeUtil: TimeUtil, saveServer: SaveServer, databaseService: DatabaseService, itemHelper: ItemHelper, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Remove/reset a completed quest condtion from players profile quest data
      * @param sessionID Session id

@@ -20,7 +20,7 @@ export declare class App {
     protected onUpdateComponents: OnUpdate[];
     protected onUpdateLastRun: {};
     protected coreConfig: ICoreConfig;
-    constructor(logger: ILogger, timeUtil: TimeUtil, localisationService: LocalisationService, configServer: ConfigServer, encodingUtil: EncodingUtil, httpServer: HttpServer, databaseService: DatabaseService, onLoadComponents: OnLoad[], onUpdateComponents: OnUpdate[]);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, localisationService: LocalisationService, configServer: ConfigServer, encodingUtil: EncodingUtil, httpServer: HttpServer, databaseService: DatabaseService, onLoadComponents: OnLoad[], onUpdateComponents: OnUpdate[]);
     load(): Promise<void>;
     protected update(onUpdateComponents: OnUpdate[]): Promise<void>;
     protected logUpdateException(err: any, updateable: OnUpdate): void;

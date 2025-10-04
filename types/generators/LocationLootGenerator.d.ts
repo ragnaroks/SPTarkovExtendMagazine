@@ -44,7 +44,7 @@ export declare class LocationLootGenerator {
     protected cloner: ICloner;
     protected locationConfig: ILocationConfig;
     protected seasonalEventConfig: ISeasonalEventConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, databaseService: DatabaseService, randomUtil: RandomUtil, itemHelper: ItemHelper, mathUtil: MathUtil, seasonalEventService: SeasonalEventService, containerHelper: ContainerHelper, presetHelper: PresetHelper, localisationService: LocalisationService, itemFilterService: ItemFilterService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, databaseService: DatabaseService, randomUtil: RandomUtil, itemHelper: ItemHelper, mathUtil: MathUtil, seasonalEventService: SeasonalEventService, containerHelper: ContainerHelper, presetHelper: PresetHelper, localisationService: LocalisationService, itemFilterService: ItemFilterService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Create an array of container objects with randomised loot
      * @param locationBase Map base to generate containers for

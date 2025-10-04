@@ -43,7 +43,7 @@ export declare class CircleOfCultistService {
     protected configServer: ConfigServer;
     protected static circleOfCultistSlotId: string;
     protected hideoutConfig: IHideoutConfig;
-    constructor(logger: ILogger, timeUtil: TimeUtil, cloner: ICloner, eventOutputHolder: EventOutputHolder, randomUtil: RandomUtil, hashUtil: HashUtil, itemHelper: ItemHelper, presetHelper: PresetHelper, profileHelper: ProfileHelper, inventoryHelper: InventoryHelper, hideoutHelper: HideoutHelper, questHelper: QuestHelper, databaseService: DatabaseService, itemFilterService: ItemFilterService, seasonalEventService: SeasonalEventService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, cloner: ICloner, eventOutputHolder: EventOutputHolder, randomUtil: RandomUtil, hashUtil: HashUtil, itemHelper: ItemHelper, presetHelper: PresetHelper, profileHelper: ProfileHelper, inventoryHelper: InventoryHelper, hideoutHelper: HideoutHelper, questHelper: QuestHelper, databaseService: DatabaseService, itemFilterService: ItemFilterService, seasonalEventService: SeasonalEventService, configServer: ConfigServer);
     /**
      * Start a sacrifice event
      * Generate rewards

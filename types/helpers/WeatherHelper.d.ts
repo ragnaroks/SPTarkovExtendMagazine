@@ -8,7 +8,7 @@ export declare class WeatherHelper {
     protected timeUtil: TimeUtil;
     protected configServer: ConfigServer;
     protected weatherConfig: IWeatherConfig;
-    constructor(logger: ILogger, timeUtil: TimeUtil, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, configServer: ConfigServer);
     /**
      * Get the current in-raid time - does not include an accurate date, only time
      * @param currentDate (new Date())

@@ -21,7 +21,7 @@ export declare class SptWebSocketConnectionHandler implements IWebSocketConnecti
     protected webSockets: Map<string, SPTWebSocket>;
     protected defaultNotification: IWsNotificationEvent;
     protected websocketPingHandler: NodeJS.Timeout | undefined;
-    constructor(logger: ILogger, profileHelper: ProfileHelper, localisationService: LocalisationService, configServer: ConfigServer, jsonUtil: JsonUtil, sptWebSocketMessageHandlers: ISptWebSocketMessageHandler[]);
+    constructor(logger: ILogger,modConfig:ModConfig, profileHelper: ProfileHelper, localisationService: LocalisationService, configServer: ConfigServer, jsonUtil: JsonUtil, sptWebSocketMessageHandlers: ISptWebSocketMessageHandler[]);
     getSocketId(): string;
     getHookUrl(): string;
     onConnection(ws: SPTWebSocket, req: IncomingMessage): Promise<void>;

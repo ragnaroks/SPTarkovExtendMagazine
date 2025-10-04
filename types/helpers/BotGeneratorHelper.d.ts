@@ -28,7 +28,7 @@ export declare class BotGeneratorHelper {
     protected configServer: ConfigServer;
     protected botConfig: IBotConfig;
     protected pmcConfig: IPmcConfig;
-    constructor(logger: ILogger, randomUtil: RandomUtil, databaseService: DatabaseService, durabilityLimitsHelper: DurabilityLimitsHelper, itemHelper: ItemHelper, inventoryHelper: InventoryHelper, containerHelper: ContainerHelper, applicationContext: ApplicationContext, localisationService: LocalisationService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, databaseService: DatabaseService, durabilityLimitsHelper: DurabilityLimitsHelper, itemHelper: ItemHelper, inventoryHelper: InventoryHelper, containerHelper: ContainerHelper, applicationContext: ApplicationContext, localisationService: LocalisationService, configServer: ConfigServer);
     /**
      * Adds properties to an item
      * e.g. Repairable / HasHinge / Foldable / MaxDurability

@@ -33,7 +33,7 @@ export declare class LootGenerator {
     protected seasonalEventService: SeasonalEventService;
     protected ragfairLinkedItemService: RagfairLinkedItemService;
     protected itemFilterService: ItemFilterService;
-    constructor(logger: ILogger, hashUtil: HashUtil, databaseService: DatabaseService, randomUtil: RandomUtil, itemHelper: ItemHelper, presetHelper: PresetHelper, inventoryHelper: InventoryHelper, weightedRandomHelper: WeightedRandomHelper, localisationService: LocalisationService, seasonalEventService: SeasonalEventService, ragfairLinkedItemService: RagfairLinkedItemService, itemFilterService: ItemFilterService);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, databaseService: DatabaseService, randomUtil: RandomUtil, itemHelper: ItemHelper, presetHelper: PresetHelper, inventoryHelper: InventoryHelper, weightedRandomHelper: WeightedRandomHelper, localisationService: LocalisationService, seasonalEventService: SeasonalEventService, ragfairLinkedItemService: RagfairLinkedItemService, itemFilterService: ItemFilterService);
     /**
      * Generate a list of items based on configuration options parameter
      * @param options parameters to adjust how loot is generated

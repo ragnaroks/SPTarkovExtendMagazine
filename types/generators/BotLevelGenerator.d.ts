@@ -11,7 +11,7 @@ export declare class BotLevelGenerator {
     protected randomUtil: RandomUtil;
     protected databaseService: DatabaseService;
     protected mathUtil: MathUtil;
-    constructor(logger: ILogger, randomUtil: RandomUtil, databaseService: DatabaseService, mathUtil: MathUtil);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, databaseService: DatabaseService, mathUtil: MathUtil);
     /**
      * Return a randomised bot level and exp value
      * @param levelDetails Min and max of level for bot

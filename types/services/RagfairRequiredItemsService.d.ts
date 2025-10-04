@@ -7,7 +7,7 @@ export declare class RagfairRequiredItemsService {
     protected paymentHelper: PaymentHelper;
     protected ragfairOfferService: RagfairOfferService;
     protected requiredItemsCache: {};
-    constructor(logger: ILogger, paymentHelper: PaymentHelper, ragfairOfferService: RagfairOfferService);
+    constructor(logger: ILogger,modConfig:ModConfig, paymentHelper: PaymentHelper, ragfairOfferService: RagfairOfferService);
     getRequiredItemsById(searchId: string): IRagfairOffer[];
     buildRequiredItemTable(): void;
 }

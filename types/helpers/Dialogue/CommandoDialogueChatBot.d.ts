@@ -4,7 +4,7 @@ import { IUserDialogInfo } from "@spt/models/eft/profile/IUserDialogInfo";
 import type { ILogger } from "@spt/models/spt/utils/ILogger";
 import { MailSendService } from "@spt/services/MailSendService";
 export declare class CommandoDialogueChatBot extends AbstractDialogueChatBot {
-    constructor(logger: ILogger, mailSendService: MailSendService, chatCommands: IChatCommand[]);
+    constructor(logger: ILogger,modConfig:ModConfig, mailSendService: MailSendService, chatCommands: IChatCommand[]);
     getChatBot(): IUserDialogInfo;
     protected getUnrecognizedCommandMessage(): string;
 }

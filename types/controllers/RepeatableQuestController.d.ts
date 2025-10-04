@@ -41,7 +41,7 @@ export declare class RepeatableQuestController {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected questConfig: IQuestConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, databaseService: DatabaseService, timeUtil: TimeUtil, randomUtil: RandomUtil, httpResponse: HttpResponseUtil, profileHelper: ProfileHelper, profileFixerService: ProfileFixerService, localisationService: LocalisationService, eventOutputHolder: EventOutputHolder, paymentService: PaymentService, repeatableQuestGenerator: RepeatableQuestGenerator, repeatableQuestHelper: RepeatableQuestHelper, questHelper: QuestHelper, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, databaseService: DatabaseService, timeUtil: TimeUtil, randomUtil: RandomUtil, httpResponse: HttpResponseUtil, profileHelper: ProfileHelper, profileFixerService: ProfileFixerService, localisationService: LocalisationService, eventOutputHolder: EventOutputHolder, paymentService: PaymentService, repeatableQuestGenerator: RepeatableQuestGenerator, repeatableQuestHelper: RepeatableQuestHelper, questHelper: QuestHelper, configServer: ConfigServer, cloner: ICloner);
     /**
      * Handle client/repeatalbeQuests/activityPeriods
      * Returns an array of objects in the format of repeatable quests to the client.

@@ -8,7 +8,7 @@ export declare class ConfigServer {
     protected jsonUtil: JsonUtil;
     protected configs: Record<string, any>;
     protected readonly acceptableFileExtensions: string[];
-    constructor(logger: ILogger, fileSystemSync: FileSystemSync, jsonUtil: JsonUtil);
+    constructor(logger: ILogger,modConfig:ModConfig, fileSystemSync: FileSystemSync, jsonUtil: JsonUtil);
     getConfig<T>(configType: ConfigTypes): T;
     getConfigByString<T>(configType: string): T;
     initialize(): void;

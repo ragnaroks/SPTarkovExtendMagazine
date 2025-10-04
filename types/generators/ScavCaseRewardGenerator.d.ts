@@ -30,7 +30,7 @@ export declare class ScavCaseRewardGenerator {
     protected scavCaseConfig: IScavCaseConfig;
     protected dbItemsCache: ITemplateItem[];
     protected dbAmmoItemsCache: ITemplateItem[];
-    constructor(logger: ILogger, randomUtil: RandomUtil, hashUtil: HashUtil, itemHelper: ItemHelper, presetHelper: PresetHelper, databaseService: DatabaseService, ragfairPriceService: RagfairPriceService, seasonalEventService: SeasonalEventService, itemFilterService: ItemFilterService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, hashUtil: HashUtil, itemHelper: ItemHelper, presetHelper: PresetHelper, databaseService: DatabaseService, ragfairPriceService: RagfairPriceService, seasonalEventService: SeasonalEventService, itemFilterService: ItemFilterService, configServer: ConfigServer);
     /**
      * Create an array of rewards that will be given to the player upon completing their scav case build
      * @param recipeId recipe of the scav case craft

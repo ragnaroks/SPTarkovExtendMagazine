@@ -10,7 +10,7 @@ export declare class PmcWaveGenerator {
     protected databaseService: DatabaseService;
     protected configServer: ConfigServer;
     protected pmcConfig: IPmcConfig;
-    constructor(logger: ILogger, randomUtil: RandomUtil, databaseService: DatabaseService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, databaseService: DatabaseService, configServer: ConfigServer);
     /**
      * Add a pmc wave to a map
      * @param locationId e.g. factory4_day, bigmap

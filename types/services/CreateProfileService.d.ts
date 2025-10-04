@@ -39,7 +39,7 @@ export declare class CreateProfileService {
     protected rewardHelper: RewardHelper;
     protected cloner: ICloner;
     protected eventOutputHolder: EventOutputHolder;
-    constructor(logger: ILogger, hashUtil: HashUtil, timeUtil: TimeUtil, saveServer: SaveServer, databaseService: DatabaseService, profileFixerService: ProfileFixerService, itemHelper: ItemHelper, questHelper: QuestHelper, profileHelper: ProfileHelper, traderHelper: TraderHelper, localisationService: LocalisationService, mailSendService: MailSendService, prestigeHelper: PrestigeHelper, playerScavGenerator: PlayerScavGenerator, questRewardHelper: QuestRewardHelper, rewardHelper: RewardHelper, cloner: ICloner, eventOutputHolder: EventOutputHolder);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, timeUtil: TimeUtil, saveServer: SaveServer, databaseService: DatabaseService, profileFixerService: ProfileFixerService, itemHelper: ItemHelper, questHelper: QuestHelper, profileHelper: ProfileHelper, traderHelper: TraderHelper, localisationService: LocalisationService, mailSendService: MailSendService, prestigeHelper: PrestigeHelper, playerScavGenerator: PlayerScavGenerator, questRewardHelper: QuestRewardHelper, rewardHelper: RewardHelper, cloner: ICloner, eventOutputHolder: EventOutputHolder);
     createProfile(sessionID: string, info: IProfileCreateRequestData): Promise<string>;
     /**
      * Delete a profile

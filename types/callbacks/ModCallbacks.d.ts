@@ -14,7 +14,7 @@ export declare class ModCallbacks implements OnLoad {
     protected localisationService: LocalisationService;
     protected configServer: ConfigServer;
     protected httpConfig: IHttpConfig;
-    constructor(logger: ILogger, httpResponse: HttpResponseUtil, httpFileUtil: HttpFileUtil, postSptModLoader: PostSptModLoader, localisationService: LocalisationService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, httpResponse: HttpResponseUtil, httpFileUtil: HttpFileUtil, postSptModLoader: PostSptModLoader, localisationService: LocalisationService, configServer: ConfigServer);
     onLoad(): Promise<void>;
     getRoute(): string;
 }

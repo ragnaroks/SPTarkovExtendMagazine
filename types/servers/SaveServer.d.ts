@@ -22,7 +22,7 @@ export declare class SaveServer {
     protected saveSHA1: {
         [key: string]: string;
     };
-    constructor(fileSystem: FileSystem, saveLoadRouters: SaveLoadRouter[], jsonUtil: JsonUtil, hashUtil: HashUtil, localisationService: LocalisationService, logger: ILogger, configServer: ConfigServer);
+    constructor(fileSystem: FileSystem, saveLoadRouters: SaveLoadRouter[], jsonUtil: JsonUtil, hashUtil: HashUtil, localisationService: LocalisationService, logger: ILogger,modConfig:ModConfig, configServer: ConfigServer);
     /**
      * Add callback to occur prior to saving profile changes
      * @param id Id for save callback

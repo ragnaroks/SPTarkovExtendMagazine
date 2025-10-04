@@ -3,7 +3,7 @@ import { RandomUtil } from "@spt/utils/RandomUtil";
 export declare class ProbabilityHelper {
     protected logger: ILogger;
     protected randomUtil: RandomUtil;
-    constructor(logger: ILogger, randomUtil: RandomUtil);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil);
     /**
      * Chance to roll a number out of 100
      * @param chance Percentage chance roll should success

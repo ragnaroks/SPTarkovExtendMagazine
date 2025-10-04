@@ -6,7 +6,7 @@ export declare class MatchBotDetailsCacheService {
     protected logger: ILogger;
     protected localisationService: LocalisationService;
     protected botDetailsCache: Record<string, IBotBase>;
-    constructor(logger: ILogger, localisationService: LocalisationService);
+    constructor(logger: ILogger,modConfig:ModConfig, localisationService: LocalisationService);
     /**
      * Store a bot in the cache, keyed by its name
      * @param botToCache Bot details to cache

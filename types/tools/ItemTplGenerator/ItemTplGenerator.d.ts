@@ -39,7 +39,7 @@ export declare class ItemTplGenerator {
     private items;
     private itemOverrides;
     private collidedEnumKeys;
-    constructor(databaseServer: DatabaseServer, localeService: LocaleService, logger: ILogger, itemHelper: ItemHelper, fileSystemSync: FileSystemSync, onLoadComponents: OnLoad[]);
+    constructor(databaseServer: DatabaseServer, localeService: LocaleService, logger: ILogger,modConfig:ModConfig, itemHelper: ItemHelper, fileSystemSync: FileSystemSync, onLoadComponents: OnLoad[]);
     run(): Promise<void>;
     /**
      * Return an object containing all items in the game with a generated name

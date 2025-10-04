@@ -32,7 +32,7 @@ export declare class DialogueController {
     protected configServer: ConfigServer;
     protected dialogueChatBots: IDialogueChatBot[];
     protected coreConfig: ICoreConfig;
-    constructor(logger: ILogger, saveServer: SaveServer, timeUtil: TimeUtil, dialogueHelper: DialogueHelper, notificationSendHelper: NotificationSendHelper, profileHelper: ProfileHelper, mailSendService: MailSendService, localisationService: LocalisationService, configServer: ConfigServer, dialogueChatBots: IDialogueChatBot[]);
+    constructor(logger: ILogger,modConfig:ModConfig, saveServer: SaveServer, timeUtil: TimeUtil, dialogueHelper: DialogueHelper, notificationSendHelper: NotificationSendHelper, profileHelper: ProfileHelper, mailSendService: MailSendService, localisationService: LocalisationService, configServer: ConfigServer, dialogueChatBots: IDialogueChatBot[]);
     registerChatBot(chatBot: IDialogueChatBot): void;
     /** Handle onUpdate spt event */
     update(): void;

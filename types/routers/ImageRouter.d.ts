@@ -6,7 +6,7 @@ export declare class ImageRouter {
     protected logger: ILogger;
     protected imageRouteService: ImageRouteService;
     protected httpFileUtil: HttpFileUtil;
-    constructor(logger: ILogger, imageRouteService: ImageRouteService, httpFileUtil: HttpFileUtil);
+    constructor(logger: ILogger,modConfig:ModConfig, imageRouteService: ImageRouteService, httpFileUtil: HttpFileUtil);
     addRoute(key: string, valueToAdd: string): void;
     sendImage(sessionID: string, req: IncomingMessage, resp: ServerResponse, body: any): Promise<void>;
     getImage(): string;

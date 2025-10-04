@@ -12,7 +12,7 @@ export declare class BotEquipmentFilterService {
     protected configServer: ConfigServer;
     protected botConfig: IBotConfig;
     protected botEquipmentConfig: Record<string, EquipmentFilters>;
-    constructor(logger: ILogger, botHelper: BotHelper, profileHelper: ProfileHelper, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, botHelper: BotHelper, profileHelper: ProfileHelper, configServer: ConfigServer);
     /**
      * Filter a bots data to exclude equipment and cartridges defines in the botConfig
      * @param sessionId Players id

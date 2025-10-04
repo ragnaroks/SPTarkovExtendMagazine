@@ -14,7 +14,7 @@ export declare class ExternalInventoryMagGen implements IInventoryMagGen {
     protected botWeaponGeneratorHelper: BotWeaponGeneratorHelper;
     protected botGeneratorHelper: BotGeneratorHelper;
     protected randomUtil: RandomUtil;
-    constructor(logger: ILogger, itemHelper: ItemHelper, localisationService: LocalisationService, botWeaponGeneratorHelper: BotWeaponGeneratorHelper, botGeneratorHelper: BotGeneratorHelper, randomUtil: RandomUtil);
+    constructor(logger: ILogger,modConfig:ModConfig, itemHelper: ItemHelper, localisationService: LocalisationService, botWeaponGeneratorHelper: BotWeaponGeneratorHelper, botGeneratorHelper: BotGeneratorHelper, randomUtil: RandomUtil);
     getPriority(): number;
     canHandleInventoryMagGen(inventoryMagGen: InventoryMagGen): boolean;
     process(inventoryMagGen: InventoryMagGen): void;

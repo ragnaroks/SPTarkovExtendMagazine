@@ -31,7 +31,7 @@ export declare class TraderController {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected traderConfig: ITraderConfig;
-    constructor(logger: ILogger, timeUtil: TimeUtil, databaseService: DatabaseService, traderAssortHelper: TraderAssortHelper, profileHelper: ProfileHelper, traderHelper: TraderHelper, paymentHelper: PaymentHelper, traderAssortService: TraderAssortService, ragfairPriceService: RagfairPriceService, traderPurchasePersisterService: TraderPurchasePersisterService, fenceService: FenceService, fenceBaseAssortGenerator: FenceBaseAssortGenerator, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, databaseService: DatabaseService, traderAssortHelper: TraderAssortHelper, profileHelper: ProfileHelper, traderHelper: TraderHelper, paymentHelper: PaymentHelper, traderAssortService: TraderAssortService, ragfairPriceService: RagfairPriceService, traderPurchasePersisterService: TraderPurchasePersisterService, fenceService: FenceService, fenceBaseAssortGenerator: FenceBaseAssortGenerator, configServer: ConfigServer, cloner: ICloner);
     /**
      * Runs when onLoad event is fired
      * Iterate over traders, ensure a pristine copy of their assorts is stored in traderAssortService

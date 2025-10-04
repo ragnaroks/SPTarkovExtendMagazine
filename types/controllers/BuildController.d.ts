@@ -21,7 +21,7 @@ export declare class BuildController {
     protected itemHelper: ItemHelper;
     protected saveServer: SaveServer;
     protected cloner: ICloner;
-    constructor(logger: ILogger, hashUtil: HashUtil, eventOutputHolder: EventOutputHolder, databaseService: DatabaseService, profileHelper: ProfileHelper, localisationService: LocalisationService, itemHelper: ItemHelper, saveServer: SaveServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, eventOutputHolder: EventOutputHolder, databaseService: DatabaseService, profileHelper: ProfileHelper, localisationService: LocalisationService, itemHelper: ItemHelper, saveServer: SaveServer, cloner: ICloner);
     /** Handle client/handbook/builds/my/list */
     getUserBuilds(sessionID: string): IUserBuilds;
     /** Handle client/builds/weapon/save */

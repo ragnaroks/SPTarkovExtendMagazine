@@ -20,7 +20,7 @@ export declare class BotWeaponGeneratorHelper {
     protected weightedRandomHelper: WeightedRandomHelper;
     protected botGeneratorHelper: BotGeneratorHelper;
     protected localisationService: LocalisationService;
-    constructor(logger: ILogger, databaseServer: DatabaseServer, itemHelper: ItemHelper, randomUtil: RandomUtil, hashUtil: HashUtil, weightedRandomHelper: WeightedRandomHelper, botGeneratorHelper: BotGeneratorHelper, localisationService: LocalisationService);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseServer: DatabaseServer, itemHelper: ItemHelper, randomUtil: RandomUtil, hashUtil: HashUtil, weightedRandomHelper: WeightedRandomHelper, botGeneratorHelper: BotGeneratorHelper, localisationService: LocalisationService);
     /**
      * Get a randomized number of bullets for a specific magazine
      * @param magCounts Weights of magazines

@@ -23,7 +23,7 @@ export declare class RepairController {
     protected repairService: RepairService;
     protected profileHelper: ProfileHelper;
     protected repairConfig: IRepairConfig;
-    constructor(logger: ILogger, eventOutputHolder: EventOutputHolder, databaseService: DatabaseService, questHelper: QuestHelper, traderHelper: TraderHelper, paymentService: PaymentService, repairHelper: RepairHelper, repairService: RepairService, profileHelper: ProfileHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, eventOutputHolder: EventOutputHolder, databaseService: DatabaseService, questHelper: QuestHelper, traderHelper: TraderHelper, paymentService: PaymentService, repairHelper: RepairHelper, repairService: RepairService, profileHelper: ProfileHelper);
     /**
      * Handle TraderRepair event
      * Repair with trader

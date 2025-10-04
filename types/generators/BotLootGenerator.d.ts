@@ -39,7 +39,7 @@ export declare class BotLootGenerator {
     protected cloner: ICloner;
     protected botConfig: IBotConfig;
     protected pmcConfig: IPmcConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, randomUtil: RandomUtil, itemHelper: ItemHelper, inventoryHelper: InventoryHelper, databaseService: DatabaseService, handbookHelper: HandbookHelper, botGeneratorHelper: BotGeneratorHelper, botWeaponGenerator: BotWeaponGenerator, weightedRandomHelper: WeightedRandomHelper, botHelper: BotHelper, botLootCacheService: BotLootCacheService, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, randomUtil: RandomUtil, itemHelper: ItemHelper, inventoryHelper: InventoryHelper, databaseService: DatabaseService, handbookHelper: HandbookHelper, botGeneratorHelper: BotGeneratorHelper, botWeaponGenerator: BotWeaponGenerator, weightedRandomHelper: WeightedRandomHelper, botHelper: BotHelper, botLootCacheService: BotLootCacheService, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
     protected getItemSpawnLimitsForBot(botRole: string): IItemSpawnLimitSettings;
     /**
      * Add loot to bots containers

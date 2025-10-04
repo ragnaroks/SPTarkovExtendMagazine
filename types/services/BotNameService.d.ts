@@ -23,7 +23,7 @@ export declare class BotNameService {
     protected botConfig: IBotConfig;
     protected pmcConfig: IPmcConfig;
     protected usedNameCache: Set<string>;
-    constructor(logger: ILogger, randomUtil: RandomUtil, profileHelper: ProfileHelper, botHelper: BotHelper, databaseService: DatabaseService, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, profileHelper: ProfileHelper, botHelper: BotHelper, databaseService: DatabaseService, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Clear out any entries in Name Set
      */

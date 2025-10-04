@@ -28,7 +28,7 @@ export declare class PaymentService {
     protected paymentHelper: PaymentHelper;
     protected configServer: ConfigServer;
     protected inventoryConfig: IInventoryConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, httpResponse: HttpResponseUtil, databaseService: DatabaseService, handbookHelper: HandbookHelper, traderHelper: TraderHelper, itemHelper: ItemHelper, inventoryHelper: InventoryHelper, localisationService: LocalisationService, paymentHelper: PaymentHelper, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, httpResponse: HttpResponseUtil, databaseService: DatabaseService, handbookHelper: HandbookHelper, traderHelper: TraderHelper, itemHelper: ItemHelper, inventoryHelper: InventoryHelper, localisationService: LocalisationService, paymentHelper: PaymentHelper, configServer: ConfigServer);
     /**
      * Take money and insert items into return to server request
      * @param pmcData Pmc profile

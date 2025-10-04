@@ -12,7 +12,7 @@ export declare class ItemFilterService {
     protected itemConfig: IItemConfig;
     protected itemBlacklistCache: Set<string>;
     protected lootableItemBlacklistCache: Set<string>;
-    constructor(logger: ILogger, cloner: ICloner, databaseServer: DatabaseServer, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, cloner: ICloner, databaseServer: DatabaseServer, configServer: ConfigServer);
     /**
      * Check if the provided template id is blacklisted in config/item.json/blacklist
      * @param tpl template id

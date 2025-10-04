@@ -28,7 +28,7 @@ export declare class PreSptModLoader implements IModLoader {
     protected sptConfig: ICoreConfig;
     protected serverDependencies: Record<string, string>;
     protected skippedMods: Set<string>;
-    constructor(logger: ILogger, fileSystemSync: FileSystemSync, jsonUtil: JsonUtil, modCompilerService: ModCompilerService, localisationService: LocalisationService, configServer: ConfigServer, modLoadOrder: ModLoadOrder, modTypeCheck: ModTypeCheck);
+    constructor(logger: ILogger,modConfig:ModConfig, fileSystemSync: FileSystemSync, jsonUtil: JsonUtil, modCompilerService: ModCompilerService, localisationService: LocalisationService, configServer: ConfigServer, modLoadOrder: ModLoadOrder, modTypeCheck: ModTypeCheck);
     load(container: DependencyContainer): Promise<void>;
     /**
      * Returns a list of mods with preserved load order

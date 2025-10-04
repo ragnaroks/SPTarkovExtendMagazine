@@ -32,7 +32,7 @@ export declare class RepeatableQuestRewardGenerator {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected questConfig: IQuestConfig;
-    constructor(logger: ILogger, randomUtil: RandomUtil, hashUtil: HashUtil, mathUtil: MathUtil, databaseService: DatabaseService, itemHelper: ItemHelper, presetHelper: PresetHelper, handbookHelper: HandbookHelper, localisationService: LocalisationService, itemFilterService: ItemFilterService, seasonalEventService: SeasonalEventService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, hashUtil: HashUtil, mathUtil: MathUtil, databaseService: DatabaseService, itemHelper: ItemHelper, presetHelper: PresetHelper, handbookHelper: HandbookHelper, localisationService: LocalisationService, itemFilterService: ItemFilterService, seasonalEventService: SeasonalEventService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Generate the reward for a mission. A reward can consist of:
      * - Experience

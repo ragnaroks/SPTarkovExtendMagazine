@@ -18,7 +18,7 @@ export declare class RaidWeatherService {
     protected configServer: ConfigServer;
     protected weatherConfig: IWeatherConfig;
     protected weatherForecast: IWeather[];
-    constructor(logger: ILogger, databaseService: DatabaseService, timeUtil: TimeUtil, weatherGenerator: WeatherGenerator, seasonalEventService: SeasonalEventService, weightedRandomHelper: WeightedRandomHelper, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, timeUtil: TimeUtil, weatherGenerator: WeatherGenerator, seasonalEventService: SeasonalEventService, weightedRandomHelper: WeightedRandomHelper, configServer: ConfigServer);
     /**
      * Generate 24 hours of weather data starting from midnight today
      */

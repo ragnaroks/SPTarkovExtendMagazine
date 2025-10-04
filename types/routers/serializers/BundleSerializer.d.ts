@@ -7,7 +7,7 @@ export declare class BundleSerializer extends Serializer {
     protected logger: ILogger;
     protected bundleLoader: BundleLoader;
     protected httpFileUtil: HttpFileUtil;
-    constructor(logger: ILogger, bundleLoader: BundleLoader, httpFileUtil: HttpFileUtil);
+    constructor(logger: ILogger,modConfig:ModConfig, bundleLoader: BundleLoader, httpFileUtil: HttpFileUtil);
     serialize(sessionID: string, req: IncomingMessage, resp: ServerResponse, body: any): Promise<void>;
     canHandle(route: string): boolean;
 }

@@ -12,7 +12,7 @@ export declare class PostDBModLoader implements OnLoad {
     protected localisationService: LocalisationService;
     protected modTypeCheck: ModTypeCheck;
     protected container: DependencyContainer;
-    constructor(logger: ILogger, bundleLoader: BundleLoader, preSptModLoader: PreSptModLoader, localisationService: LocalisationService, modTypeCheck: ModTypeCheck);
+    constructor(logger: ILogger,modConfig:ModConfig, bundleLoader: BundleLoader, preSptModLoader: PreSptModLoader, localisationService: LocalisationService, modTypeCheck: ModTypeCheck);
     onLoad(): Promise<void>;
     getRoute(): string;
     getModPath(mod: string): string;

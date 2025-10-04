@@ -26,7 +26,7 @@ export declare class PmcChatResponseService {
     protected configServer: ConfigServer;
     protected pmcResponsesConfig: IPmcChatResponse;
     protected giftConfig: IGiftsConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, randomUtil: RandomUtil, notificationSendHelper: NotificationSendHelper, matchBotDetailsCacheService: MatchBotDetailsCacheService, localisationService: LocalisationService, localeService: LocaleService, giftService: GiftService, weightedRandomHelper: WeightedRandomHelper, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, randomUtil: RandomUtil, notificationSendHelper: NotificationSendHelper, matchBotDetailsCacheService: MatchBotDetailsCacheService, localisationService: LocalisationService, localeService: LocaleService, giftService: GiftService, weightedRandomHelper: WeightedRandomHelper, configServer: ConfigServer);
     /**
      * For each PMC victim of the player, have a chance to send a message to the player, can be positive or negative
      * @param sessionId Session id

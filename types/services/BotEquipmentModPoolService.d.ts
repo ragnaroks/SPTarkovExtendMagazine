@@ -18,7 +18,7 @@ export declare class BotEquipmentModPoolService {
     protected gearModPool: IMods;
     protected weaponPoolGenerated: boolean;
     protected armorPoolGenerated: boolean;
-    constructor(logger: ILogger, itemHelper: ItemHelper, databaseService: DatabaseService, localisationService: LocalisationService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, itemHelper: ItemHelper, databaseService: DatabaseService, localisationService: LocalisationService, configServer: ConfigServer);
     /**
      * Store dictionary of mods for each item passed in
      * @param items items to find related mods and store in modPool

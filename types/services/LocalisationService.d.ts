@@ -12,7 +12,7 @@ export declare class LocalisationService {
     protected databaseServer: DatabaseServer;
     protected localeService: LocaleService;
     protected i18n: I18n;
-    constructor(logger: ILogger, randomUtil: RandomUtil, databaseServer: DatabaseServer, localeService: LocaleService);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, databaseServer: DatabaseServer, localeService: LocaleService);
     /**
      * Get a localised value using the passed in key
      * @param key Key to loop up locale for

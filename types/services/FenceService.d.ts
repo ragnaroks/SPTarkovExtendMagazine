@@ -41,7 +41,7 @@ export declare class FenceService {
     /** Desired baseline counts - Hydrated on initial assort generation as part of generateFenceAssorts() */
     protected desiredAssortCounts: IFenceAssortGenerationValues;
     protected fenceItemUpdCompareProperties: Set<string>;
-    constructor(logger: ILogger, timeUtil: TimeUtil, randomUtil: RandomUtil, databaseService: DatabaseService, handbookHelper: HandbookHelper, itemHelper: ItemHelper, presetHelper: PresetHelper, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, timeUtil: TimeUtil, randomUtil: RandomUtil, databaseService: DatabaseService, handbookHelper: HandbookHelper, itemHelper: ItemHelper, presetHelper: PresetHelper, localisationService: LocalisationService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Replace main fence assort with new assort
      * @param assort New assorts to replace old with

@@ -23,7 +23,7 @@ export declare class InRaidHelper {
     protected questHelper: QuestHelper;
     protected lostOnDeathConfig: ILostOnDeathConfig;
     protected inRaidConfig: IInRaidConfig;
-    constructor(logger: ILogger, inventoryHelper: InventoryHelper, itemHelper: ItemHelper, configServer: ConfigServer, cloner: ICloner, databaseService: DatabaseService, questController: QuestController, profileHelper: ProfileHelper, questHelper: QuestHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, inventoryHelper: InventoryHelper, itemHelper: ItemHelper, configServer: ConfigServer, cloner: ICloner, databaseService: DatabaseService, questController: QuestController, profileHelper: ProfileHelper, questHelper: QuestHelper);
     /**
      * @deprecated
      * Reset the skill points earned in a raid to 0, ready for next raid

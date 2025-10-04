@@ -28,7 +28,7 @@ export declare class ProfileSptCommand implements ISptCommand {
     private static commandRegex;
     private static examineRegex;
     protected savedCommand: SavedCommand;
-    constructor(logger: ILogger, itemHelper: ItemHelper, hashUtil: HashUtil, presetHelper: PresetHelper, mailSendService: MailSendService, localeService: LocaleService, databaseServer: DatabaseServer, profileHelper: ProfileHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, itemHelper: ItemHelper, hashUtil: HashUtil, presetHelper: PresetHelper, mailSendService: MailSendService, localeService: LocaleService, databaseServer: DatabaseServer, profileHelper: ProfileHelper);
     getCommand(): string;
     getCommandHelp(): string;
     performAction(commandHandler: IUserDialogInfo, sessionId: string, request: ISendMessageRequest): string;

@@ -37,7 +37,7 @@ export declare class TraderAssortHelper {
     protected traderConfig: ITraderConfig;
     protected mergedQuestAssorts: Record<string, Record<string, string>>;
     protected createdMergedQuestAssorts: boolean;
-    constructor(logger: ILogger, mathUtil: MathUtil, timeUtil: TimeUtil, databaseService: DatabaseService, profileHelper: ProfileHelper, assortHelper: AssortHelper, paymentHelper: PaymentHelper, ragfairAssortGenerator: RagfairAssortGenerator, ragfairOfferGenerator: RagfairOfferGenerator, traderAssortService: TraderAssortService, localisationService: LocalisationService, traderPurchasePersisterService: TraderPurchasePersisterService, traderHelper: TraderHelper, fenceService: FenceService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, mathUtil: MathUtil, timeUtil: TimeUtil, databaseService: DatabaseService, profileHelper: ProfileHelper, assortHelper: AssortHelper, paymentHelper: PaymentHelper, ragfairAssortGenerator: RagfairAssortGenerator, ragfairOfferGenerator: RagfairOfferGenerator, traderAssortService: TraderAssortService, localisationService: LocalisationService, traderPurchasePersisterService: TraderPurchasePersisterService, traderHelper: TraderHelper, fenceService: FenceService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Get a traders assorts
      * Can be used for returning ragfair / fence assorts

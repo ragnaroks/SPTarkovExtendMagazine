@@ -14,7 +14,7 @@ export declare class LocationController {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected locationConfig: ILocationConfig;
-    constructor(logger: ILogger, databaseService: DatabaseService, airdropService: AirdropService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, databaseService: DatabaseService, airdropService: AirdropService, configServer: ConfigServer, cloner: ICloner);
     /**
      * Handle client/locations
      * Get all maps base location properties without loot data

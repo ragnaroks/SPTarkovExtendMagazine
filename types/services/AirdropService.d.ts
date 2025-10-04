@@ -26,7 +26,7 @@ export declare class AirdropService {
     protected configServer: ConfigServer;
     protected cloner: ICloner;
     protected airdropConfig: IAirdropConfig;
-    constructor(logger: ILogger, hashUtil: HashUtil, itemHelper: ItemHelper, weightedRandomHelper: WeightedRandomHelper, localisationService: LocalisationService, itemFilterService: ItemFilterService, lootGenerator: LootGenerator, databaseService: DatabaseService, configServer: ConfigServer, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, itemHelper: ItemHelper, weightedRandomHelper: WeightedRandomHelper, localisationService: LocalisationService, itemFilterService: ItemFilterService, lootGenerator: LootGenerator, databaseService: DatabaseService, configServer: ConfigServer, cloner: ICloner);
     generateCustomAirdropLoot(request: IGetAirdropLootRequest): IGetAirdropLootResponse;
     /**
      * Handle client/location/getAirdropLoot

@@ -22,7 +22,7 @@ export declare class HttpServer {
     protected certPath: string;
     protected keyPath: string;
     protected fileSystem: FileSystem;
-    constructor(logger: ILogger, httpServerHelper: HttpServerHelper, localisationService: LocalisationService, httpListeners: IHttpListener[], configServer: ConfigServer, applicationContext: ApplicationContext, webSocketServer: WebSocketServer, fileSystem: FileSystem);
+    constructor(logger: ILogger,modConfig:ModConfig, httpServerHelper: HttpServerHelper, localisationService: LocalisationService, httpListeners: IHttpListener[], configServer: ConfigServer, applicationContext: ApplicationContext, webSocketServer: WebSocketServer, fileSystem: FileSystem);
     /**
      * Handle server loading event
      */

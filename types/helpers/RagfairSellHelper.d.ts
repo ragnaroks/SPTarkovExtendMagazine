@@ -12,7 +12,7 @@ export declare class RagfairSellHelper {
     protected databaseService: DatabaseService;
     protected configServer: ConfigServer;
     protected ragfairConfig: IRagfairConfig;
-    constructor(logger: ILogger, randomUtil: RandomUtil, timeUtil: TimeUtil, databaseService: DatabaseService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, timeUtil: TimeUtil, databaseService: DatabaseService, configServer: ConfigServer);
     /**
      * Get the percent chance to sell an item based on its average listed price vs player chosen listing price
      * @param averageOfferPriceRub Price of average offer in roubles

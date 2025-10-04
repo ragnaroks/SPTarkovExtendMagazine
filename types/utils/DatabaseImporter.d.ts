@@ -25,7 +25,7 @@ export declare class DatabaseImporter implements OnLoad {
     private valid;
     private filepath;
     protected httpConfig: IHttpConfig;
-    constructor(logger: ILogger, fileSystem: FileSystem, jsonUtil: JsonUtil, localisationService: LocalisationService, databaseServer: DatabaseServer, imageRouter: ImageRouter, encodingUtil: EncodingUtil, hashUtil: HashUtil, importerUtil: ImporterUtil, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, fileSystem: FileSystem, jsonUtil: JsonUtil, localisationService: LocalisationService, databaseServer: DatabaseServer, imageRouter: ImageRouter, encodingUtil: EncodingUtil, hashUtil: HashUtil, importerUtil: ImporterUtil, configServer: ConfigServer);
     /**
      * Get path to spt data
      * @returns path to data

@@ -20,7 +20,7 @@ export declare class InraidController {
     protected configServer: ConfigServer;
     protected inRaidConfig: IInRaidConfig;
     protected botConfig: IBotConfig;
-    constructor(logger: ILogger, saveServer: SaveServer, profileHelper: ProfileHelper, localisationService: LocalisationService, applicationContext: ApplicationContext, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, saveServer: SaveServer, profileHelper: ProfileHelper, localisationService: LocalisationService, applicationContext: ApplicationContext, configServer: ConfigServer);
     /**
      * Save locationId to active profiles inraid object AND app context
      * @param sessionID Session id

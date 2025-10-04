@@ -7,7 +7,7 @@ export declare class ModLoadOrder {
     protected mods: Map<string, IPackageJsonData>;
     protected modsAvailable: Map<string, IPackageJsonData>;
     protected loadOrder: Map<string, IPackageJsonData>;
-    constructor(logger: ILogger, localisationService: LocalisationService);
+    constructor(logger: ILogger,modConfig:ModConfig, localisationService: LocalisationService);
     setModList(mods: Record<string, IPackageJsonData>): Map<string, IPackageJsonData>;
     getLoadOrder(): string[];
     getModsOnLoadBefore(mod: string): Set<string>;

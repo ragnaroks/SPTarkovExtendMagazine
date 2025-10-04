@@ -42,7 +42,7 @@ export declare class ProfileFixerService {
     protected rewardHelper: RewardHelper;
     protected coreConfig: ICoreConfig;
     protected ragfairConfig: IRagfairConfig;
-    constructor(logger: ILogger, watermark: Watermark, databaseService: DatabaseService, hideoutHelper: HideoutHelper, inventoryHelper: InventoryHelper, traderHelper: TraderHelper, profileHelper: ProfileHelper, itemHelper: ItemHelper, localisationService: LocalisationService, timeUtil: TimeUtil, jsonUtil: JsonUtil, hashUtil: HashUtil, configServer: ConfigServer, cloner: ICloner, rewardHelper: RewardHelper);
+    constructor(logger: ILogger,modConfig:ModConfig, watermark: Watermark, databaseService: DatabaseService, hideoutHelper: HideoutHelper, inventoryHelper: InventoryHelper, traderHelper: TraderHelper, profileHelper: ProfileHelper, itemHelper: ItemHelper, localisationService: LocalisationService, timeUtil: TimeUtil, jsonUtil: JsonUtil, hashUtil: HashUtil, configServer: ConfigServer, cloner: ICloner, rewardHelper: RewardHelper);
     /**
      * Find issues in the pmc profile data that may cause issues and fix them
      * @param pmcProfile profile to check and fix

@@ -26,7 +26,7 @@ export declare class RewardHelper {
     protected traderHelper: TraderHelper;
     protected presetHelper: PresetHelper;
     protected cloner: ICloner;
-    constructor(logger: ILogger, hashUtil: HashUtil, timeUtil: TimeUtil, itemHelper: ItemHelper, databaseService: DatabaseService, profileHelper: ProfileHelper, localisationService: LocalisationService, traderHelper: TraderHelper, presetHelper: PresetHelper, cloner: ICloner);
+    constructor(logger: ILogger,modConfig:ModConfig, hashUtil: HashUtil, timeUtil: TimeUtil, itemHelper: ItemHelper, databaseService: DatabaseService, profileHelper: ProfileHelper, localisationService: LocalisationService, traderHelper: TraderHelper, presetHelper: PresetHelper, cloner: ICloner);
     /**
      * Apply the given rewards to the passed in profile
      * @param rewards List of rewards to apply

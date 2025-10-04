@@ -12,7 +12,7 @@ export declare class OpenZoneService {
     protected localisationService: LocalisationService;
     protected configServer: ConfigServer;
     protected locationConfig: ILocationConfig;
-    constructor(logger: ILogger, randomUtil: RandomUtil, databaseService: DatabaseService, localisationService: LocalisationService, configServer: ConfigServer);
+    constructor(logger: ILogger,modConfig:ModConfig, randomUtil: RandomUtil, databaseService: DatabaseService, localisationService: LocalisationService, configServer: ConfigServer);
     /**
      * Add open zone to specified map
      * @param locationId map location (e.g. factory4_day)
